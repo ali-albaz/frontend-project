@@ -13,5 +13,5 @@
 
 
 .bg-hero{
-    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)) , url('../images/header-hero/hero.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.45)) , url('../images/header-hero/hero.jpg');
 }
