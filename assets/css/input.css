@@ -9,5 +9,9 @@
     --font-montserrat : "Montserrat", sans-serif;
     --font-librefranklin : "Libre Franklin", sans-serif;
 
+}
 
+
+.bg-hero{
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)) , url('../images/header-hero/hero.jpg');
 }
