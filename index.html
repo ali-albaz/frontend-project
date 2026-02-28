@@ -6,8 +6,8 @@
   <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body class="font-montserrat">
-
-  <!-- Hero Section -->
+<header>
+  <!-- Hero Section + Header-->
   <section class="bg-hero rounded-3xl mx-4 mt-4 shadow-xl min-h-[500px] bg-cover bg-center bg-no-repeat md:min-h-[700px]">
     <!-- Navbar -->
     <nav class="grid grid-cols-2 items-center px-4 py-6 md:grid-cols-3 md:px-8 md:py-7">
@@ -91,10 +91,12 @@
         <p class="text-lg md:text-[20px]">Special Offers To Suit Your Plan</p>
       </div>
   </section>
+</header>
 
+<main>
   <!-- Filter (Search Card) -->
   <div class="container mx-auto px-4 md:px-10 -mt-24 md:-mt-28 mb-20">
-    <div class="bg-white rounded-3xl shadow-2xl p-5 md:p-8">
+    <div class="bg-white rounded-3xl shadow-lg p-5 md:p-8">
 
       <!-- Filter Nav Buttons -->
       <div class="flex items-center gap-6 mb-6 md:gap-8 md:mb-8">
@@ -130,9 +132,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 mb-8">
     
         <!-- Destination -->
-        <div class="relative border border-[#79747E] rounded-lg p-4">
-          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211] font-semibold">From - To</label>
-          <select class="w-full text-[#112211] font-medium p-2 bg-transparent appearance-none">
+        <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">From - To</label>
+          <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
             <option>Lahore - Karachi</option>
             <option>Karachi - Lahore</option>
             <option>Lahore - Islamabad</option>
@@ -146,9 +148,9 @@
         </div>
 
         <!-- Trip -->
-        <div class="relative border border-[#79747E] rounded-lg p-4">
-          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211] font-semibold">Trip</label>
-          <select class="w-full text-[#112211] font-medium p-2 bg-transparent appearance-none">
+        <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Trip</label>
+          <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
             <option>Return</option>
             <option>One Way</option>
             <option>Multi-City</option>
@@ -161,15 +163,15 @@
         </div>
 
         <!-- Depart - Return -->
-        <div class="relative border border-[#79747E] rounded-lg p-4">
-          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-sm text-[#112211] font-semibold">Depart - Return</label>
-          <input type="text" class="w-full text-[#112211] font-medium p-2 bg-transparent" placeholder="07 Nov 22 - 13 Nov 22" onfocus="(this.type='date')" />
+        <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-sm text-[#112211]/50 font-semibold">Depart - Return</label>
+          <input type="text" class="w-full text-[#112211]/80 font-medium p-2 bg-transparent" placeholder="07 Nov 22 - 13 Nov 22" onfocus="(this.type='date')" />
         </div>
 
         <!-- Passenger - Class -->
-        <div class="relative border border-[#79747E] rounded-lg p-4">
-          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211] font-semibold">Passenger - Class</label>
-          <select class="w-full text-[#112211] font-medium p-2 bg-transparent appearance-none">
+        <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Passenger - Class</label>
+          <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
             <option>1 Passenger, Economy</option>
             <option>2 Passengers, Economy</option>
             <option>1 Passenger, Business</option>
@@ -202,7 +204,200 @@
     </div>
   </div>
 
+  <!-- Places Section -->
+  <section class="Places p-[50px]">
+    <div class="container mx-auto md:px-10">
+
+      <!-- Places Header -->
+      <div class="flex flex-col md:flex-row md:justify-between">
+        
+        <div class="text-center md:text-start">
+          <h2 class="text-[32px] font-semibold mb-[16px]">Plan Your Perfect Trip</h2>
+          <p class="text-[#112211]/50 text-[16px]">Search Flights & Places Hire to our most popular destinations</p>
+        </div>
+
+        <div class="text-[#112211] mt-10 text-center">
+          <a href="" class="border border-[#8DD3BB] rounded-lg py-[11px] px-[16px] hover:bg-[#8DD3BB] transition delay-100 duration-150 ease-in-out">See More Places</a>
+        </div>
+      </div>
+
+      <!-- Places Content(Cards) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px]">
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <div class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
   <script>
+    /* Navbar Menu Hamburger */
     const menuBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
