@@ -15,3 +15,11 @@
 .bg-hero{
     background-image: linear-gradient(rgba(0,0,0,0.45)) , url('../images/header-hero/hero.jpg');
 }
+
+.flights-bg{
+    background-image: linear-gradient(rgba(0,0,0,0.45)) , url('../images/flights-hotels/flights.jpg');
+}
+
+.hotels-bg{
+    background-image: linear-gradient(rgba(0,0,0,0.45)) , url('../images/flights-hotels/hotels.jpg');
+}

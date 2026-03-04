@@ -102,7 +102,7 @@
       <div class="flex items-center gap-6 mb-6 md:gap-8 md:mb-8">
 
         <!-- Flights -->
-        <button class="flex items-center gap-2 font-semibold text-gray-900 border-b-4 border-b-transparent hover:border-b-4 hover:border-[#8DD3BB] transition delay-150 duration-500 ease-in-out py-4 px-1 whitespace-nowrap">
+        <button class="flex items-center gap-2 font-semibold text-gray-900 border-b-4 border-b-transparent hover:border-b-4 hover:border-[#8DD3BB] transition delay-150 duration-500 ease-in-out py-4 px-1">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none">
               <path fill="#121" d="M7.997 19.5H6.75a.75.75 0 0 1-.683-1.06l3.021-6.667-4.537-.101-1.655 2.005c-.315.396-.567.573-1.209.573h-.84a.83.83 0 0 1-.689-.33c-.112-.151-.221-.406-.114-.77l.929-3.328.024-.074V9.74a1 1 0 0 1-.024-.075l-.93-3.35c-.101-.356.009-.605.12-.752A.79.79 0 0 1 .8 5.25h.887c.48 0 .945.215 1.219.563l1.62 1.97 4.562-.067-3.02-6.656A.75.75 0 0 1 6.75 0h1.26a1.17 1.17 0 0 1 .908.46l5.862 7.124 2.708-.07c.198-.012.747-.015.874-.015 2.59.001 4.138.842 4.138 2.251 0 .443-.178 1.266-1.363 1.789-.7.31-1.634.466-2.776.466-.125 0-.673-.004-.874-.015l-2.708-.072-5.876 7.125a1.17 1.17 0 0 1-.906.457"/>
@@ -116,7 +116,7 @@
         <div class="w-px h-8 bg-gray-300"></div>
 
         <!-- Hotels -->
-        <button class="flex items-center gap-2 font-semibold text-gray-900 py-4 px-1 border-b-4 border-b-transparent hover:border-b-4 hover:border-[#8DD3BB] transition delay-150 duration-500 ease-in-out whitespace-nowrap">
+        <button class="flex items-center gap-2 font-semibold text-gray-900 py-4 px-1 border-b-4 border-b-transparent hover:border-b-4 hover:border-[#8DD3BB] transition delay-150 duration-500 ease-in-out">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
               <path fill="#121" d="M18.75 7.064a3.7 3.7 0 0 0-1.5-.314H3.75A3.754 3.754 0 0 0 0 10.5v5.25a.75.75 0 1 0 1.5 0v-.375A.38.38 0 0 1 1.875 15h17.25a.38.38 0 0 1 .375.375v.375a.75.75 0 1 0 1.5 0V10.5a3.75 3.75 0 0 0-2.25-3.436M16.125 0H4.875A2.625 2.625 0 0 0 2.25 2.625V6a.187.187 0 0 0 .24.18c.409-.12.833-.18 1.26-.18h.198a.19.19 0 0 0 .188-.166A1.5 1.5 0 0 1 5.625 4.5H8.25a1.5 1.5 0 0 1 1.49 1.334.187.187 0 0 0 .188.166h1.147a.187.187 0 0 0 .187-.166A1.5 1.5 0 0 1 12.75 4.5h2.625a1.5 1.5 0 0 1 1.49 1.334.19.19 0 0 0 .188.166h.197c.427 0 .851.06 1.26.18a.188.188 0 0 0 .24-.18V2.625A2.625 2.625 0 0 0 16.125 0"/>
@@ -191,7 +191,7 @@
         </button>
 
         <!-- Show Flights BTN -->
-        <button class="w-full bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 md:w-auto">
+        <button class="w-full bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 md:w-auto hover:scale-105 transition duration-300">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
             </svg>
@@ -205,7 +205,7 @@
   </div>
 
   <!-- Places Section -->
-  <section class="Places p-[50px]">
+  <section class="Places p-12.5">
     <div class="container mx-auto md:px-10">
 
       <!-- Places Header -->
@@ -393,6 +393,50 @@
         </div>
 
       </div>
+      
+    </div>
+  </section>
+
+  <!-- Flights & Hetels Section -->
+  <section class="flights-hotels p-12.5">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Flights -->
+      <div class="flights-bg rounded-3xl bg-cover bg-center bg-no-repeat h-[420px] text-white flex flex-col justify-end items-center text-center p-6 md:p-10">
+
+        <h2 class="text-3xl md:text-4xl font-semibold mb-3">Flights</h2>
+
+        <p class="text-sm md:text-base text-gray-200 mb-6 max-w-md">
+          Search Flights & Places Hire to our most popular destinations
+        </p>
+
+        <button class="bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 hover:scale-105 transition duration-300">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
+            </svg>
+          </span>
+          Show Flights
+        </button>
+      </div>
+
+      <!--Hotels-->
+      <div class="hotels-bg rounded-3xl bg-cover bg-center bg-no-repeat h-[420px] text-white flex flex-col justify-end items-center text-center p-6 md:p-10">
+
+        <h2 class="text-3xl md:text-4xl font-semibold mb-3">Hotels</h2>
+
+        <p class="text-sm md:text-base text-gray-200 mb-6 max-w-md">
+          Search hotels & Places Hire to our most popular destinations
+        </p>
+
+        <button class="bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 hover:scale-105 transition duration-300">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
+            </svg>
+          </span>
+          Show Hotels
+        </button>
+      </div>
+      
     </div>
   </section>
 </main>
