@@ -23,3 +23,7 @@
 .hotels-bg{
     background-image: linear-gradient(rgba(0,0,0,0.45)) , url('../images/flights-hotels/hotels.jpg');
 }
+
+.hero-bg{
+    background-image: url('../images/Flights-flow/flights-search/hero.jpg');
+}
