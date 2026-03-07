@@ -87,22 +87,115 @@
   </section>
 </header>
 
-<!-- Hero Section -->
-<section class="hero-bg min-h-[400px] md:min-h-[520px] w-full bg-cover bg-center bg-no-repeat flex items-center">
-  <div class="container mx-auto px-6 md:px-12">
-    <div class="max-w-2xl text-left text-white">
-      
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 font-librefranklin leading-normal">
-        Make your travel <br class="hidden sm:block"> wishlist, we'll do <br class="hidden sm:block"> the rest
-      </h1>
+<main>
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-[400px] md:min-h-[520px] w-full bg-cover bg-center bg-no-repeat flex items-center">
+    <div class="container mx-auto relative ">
+      <div class="max-w-2xl text-left text-white absolute left-0 -bottom-12.5 px-6">
+        
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 font-librefranklin leading-normal">
+          Make your travel <br class="hidden sm:block"> wishlist, we'll do <br class="hidden sm:block"> the rest
+        </h1>
 
-      <p class="text-base sm:text-lg md:text-xl text-white/80 font-librefranklin">
-        Special offers to suit your plan
-      </p>
-      
+        <p class="text-base sm:text-lg md:text-xl text-white/80 font-librefranklin">
+          Special offers to suit your plan
+        </p>
+        
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Filter (Search Card) -->
+  <section class="search-card">
+    <div class="container mx-auto px-4 -mt-24 md:-mt-20 mb-20">
+      <div class="bg-white rounded-3xl shadow-lg p-5 md:p-8">
+
+        <!-- Filter Nav Buttons -->
+        <div class="mb-6 md:gap-8 md:mb-8 text-[#112211]">
+
+          <h1 class="font-semibold text-base md:text-[20px] font-librefranklin">Where are you flying?</h1>
+
+        </div>
+
+        <!-- Filter Choice Boxes -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 mb-8">
+      
+          <!-- Destination -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">From - To</label>
+            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
+              <option>Lahore - Karachi</option>
+              <option>Karachi - Lahore</option>
+              <option>Lahore - Islamabad</option>
+              <option>Islamabad - Karachi</option>
+            </select>
+            <div class="absolute right-4 top-6.5 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" fill="none">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5.75 15.75 6l-5.25 5.25M14.947 6H.75M6 20.25.75 15 6 9.75M1.594 15H15.75"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Trip -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Trip</label>
+            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
+              <option>Return</option>
+              <option>One Way</option>
+              <option>Multi-City</option>
+            </select>
+            <div class="absolute right-4 top-8 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" fill="none">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75.75 7.5 7.5 14.25.75"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Depart - Return -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-sm text-[#112211]/50 font-semibold">Depart - Return</label>
+            <input type="text" class="w-full text-[#112211]/80 font-medium p-2 bg-transparent" placeholder="07 Nov 22 - 13 Nov 22" onfocus="(this.type='date')" />
+          </div>
+
+          <!-- Passenger - Class -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Passenger - Class</label>
+            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
+              <option>1 Passenger, Economy</option>
+              <option>2 Passengers, Economy</option>
+              <option>1 Passenger, Business</option>
+              <option>2 Passengers, Business</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-col justify-end items-center gap-6 md:flex-row">
+
+          <!-- Promo Code -->
+          <button class="w-full font-bold text-[#112211] hover:text-black transition py-2 md:w-auto">
+            <span class="text-lg">+</span>
+            Add Promo Code
+          </button>
+
+          <!-- Show Flights BTN -->
+          <button class="w-full bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 md:w-auto hover:scale-105 transition duration-300">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
+              </svg>
+            </span>
+            Show Flights
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+</main>
 
 <script>
 /* Navbar Menu Hamburger */
