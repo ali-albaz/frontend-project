@@ -7,7 +7,7 @@
 
     <link href="../assets/css/output.css" rel="stylesheet">
 </head>
-<body class="font-montserrat bg-gray-100">
+<body class="font-montserrat bg-gray-100 box-border m-0 p-0">
 
 <!-- Header -->
 <header class="sticky top-0 bg-white z-50">
@@ -112,7 +112,7 @@
 </header>
 
 <main>
-    <!-- Filter (Search Card) -->
+  <!-- Filter (Search Card) -->
   <section class="search-card">
     <div class="container mx-auto px-4 mt-8 md:mt-12 mb-20">
       <div class="bg-white rounded-3xl shadow-lg p-5 md:p-8">
@@ -178,6 +178,180 @@
       </div>
     </div>
   </section>
+
+  <!-- Fliters & Flights Section -->
+   <section class="p-12 5">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-[400px_1fr]">
+            
+            <!-- Lefts Sections (Filters) -->
+            <div class="filters">
+
+                <!--Header-->
+                <div class="header text-[#112211]">
+                    <h2 class="text-2xl font-bold mb-8">Filters</h2>
+                </div>
+
+                <!-- Price -->
+                <div class="mb-10 text-[#112211]">
+
+                 <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-semibold text-lg">Price</h3>
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.25 7.5L7.5 0.75L0.75 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                 </div>
+                 
+                 <div class="relative h-0.75 bg-[#112211] rounded-full mb-4">
+                    <div class="absolute -top-2 left-0 w-5 h-5 bg-[#8DD3BB] rounded-full shadow"></div>
+                    <div class="absolute -top-2 right-0 w-5 h-5 bg-[#8DD3BB] rounded-full shadow"></div>
+                 </div>
+
+                 <div class="flex justify-between text-sm font-medium text-[#112211]/80">
+                    <span>$50</span>
+                    <span>$1200</span>
+                 </div>
+
+                </div>
+
+                 <!-- Divider Line -->
+                <div class="w-py h-[1px] bg-[#112211]/40"></div>
+
+                <!-- Departure Time -->
+                <div class="mt-10 mb-10 text-[#112211]">
+
+                 <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-semibold text-lg">Departure Time</h3>
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.25 7.5L7.5 0.75L0.75 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                 </div>
+                 
+                 <div class="relative h-0.5 bg-[#112211] rounded-full mb-4">
+                    <div class="absolute -top-2 left-0 w-5 h-5 bg-[#8DD3BB] rounded-full shadow"></div>
+                    <div class="absolute -top-2 right-0 w-5 h-5 bg-[#8DD3BB] rounded-full shadow"></div>
+                 </div>
+
+                 <div class="flex justify-between text-sm font-medium text-[#112211]/80">
+                    <span>12:01Am</span>
+                    <span>11:56Pm</span>
+                 </div>
+
+                </div>
+
+                <!-- Divider Line -->
+                <div class="w-py h-[1px] bg-[#112211]/40"></div>
+
+                <!-- Rating -->
+                <div class="mb-10 mt-10 text-[#112211]">
+
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-semibold text-lg">Rating</h3>
+                        <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.25 7.5L7.5 0.75L0.75 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="flex gap-2 flex-wrap text-[#112211]">
+                        <button class="px-4 py-2 border border-[#8DD3BB] rounded-md text-sm font-medium hover:bg-[#8DD3BB]/50">0+</button>
+                        <button class="px-4 py-2 border border-[#8DD3BB] rounded-md text-sm font-medium hover:bg-[#8DD3BB]/50">1+</button>
+                        <button class="px-4 py-2 border border-[#8DD3BB] rounded-md text-sm font-medium hover:bg-[#8DD3BB]/50">2+</button>
+                        <button class="px-4 py-2 border border-[#8DD3BB] rounded-md text-sm font-medium hover:bg-[#8DD3BB]/50">3+</button>
+                        <button class="px-4 py-2 border border-[#8DD3BB] rounded-md text-sm font-medium hover:bg-[#8DD3BB]/50">4+</button>
+                    </div>
+
+                </div>
+
+                <!-- Divider Line -->
+                <div class="w-py h-[1px] bg-[#112211]/40"></div>
+
+                <!-- Airlines -->
+                <div class="mb-10 mt-10 text-[#112211]">
+
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-semibold text-lg">Airlines</h3>
+                        <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.25 7.5L7.5 0.75L0.75 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="space-y-4 text-[#112211]">
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>Emirated</span>
+                        </label>
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>Fly Dubai</span>
+                        </label>
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>Qatar</span>
+                        </label>
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>Etihad</span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Divider Line -->
+                <div class="w-py h-[1px] bg-[#112211]/40"></div>
+
+                <!-- Trips -->
+                <div class="mb-10 mt-10 text-[#112211]">
+
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-semibold text-lg">Trips</h3>
+                        <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.25 7.5L7.5 0.75L0.75 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="space-y-4 text-[#112211]">
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>Round trip</span>
+                        </label>
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>On Way</span>
+                        </label>
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>Multi-City</span>
+                        </label>
+
+                        <label class="flex items-center space-x-3">
+                            <input type="checkbox" class="w-5 h-5 rounded border-2 border-[#112211]">
+                            <span>My Dates Are Flexible</span>
+                        </label>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="flights">
+                
+                <!-- Prices -->
+                <div class="grid md:grid-cols-4">
+                    
+                </div>
+            </div>
+        
+        </div>
+    </div>
+   </section>
+
 
   <!-- Subscribe Card -->
   <section class="sub-card">
