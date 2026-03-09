@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flights Search</title>
+    <title>Flights Listing</title>
 
     <link href="../assets/css/output.css" rel="stylesheet">
 </head>
@@ -43,7 +43,6 @@
             <g stroke="#121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M2 12.32h20M2 18.32h20M2 6.32h20"/></g>
             <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M2 12.32h20M2 18.32h20M2 6.32h20"/></g>
         </svg>
-
       </button>
 
       <!-- Mobile Menu -->
@@ -78,359 +77,41 @@
 
         <!-- Login & Sign Up -->
         <div class="grid grid-cols-1 md:grid-flow-col auto-cols-max gap-4 md:gap-6 justify-center md:justify-self-end md:col-start-3 md:row-start-1 items-center border-t border-white/20 md:border-none pt-6 md:pt-0 text-center">
-          <a href="" class="font-semibold text-[#112211]">Login</a>
-          <a href="" class="font-semibold text-white px-5 py-2.5 rounded-lg bg-[#112211] hover:bg-[#112211]/80 transition">Sign Up</a>
+          <div class="flex justify-center">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="mt-0.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75052 18C9.44944 17.9996 9.15544 17.9086 8.90677 17.7389C5.22286 15.2381 3.62771 13.5234 2.74786 12.4514C0.872864 10.1663 -0.024792 7.82016 0.000520508 5.27953C0.0300518 2.36813 2.36583 0 5.2074 0C7.27365 0 8.70474 1.16391 9.53818 2.13328C9.56458 2.16368 9.5972 2.18805 9.63383 2.20476C9.67047 2.22146 9.71026 2.23011 9.75052 2.23011C9.79078 2.23011 9.83058 2.22146 9.86721 2.20476C9.90384 2.18805 9.93646 2.16368 9.96286 2.13328C10.7963 1.16297 12.2274 0 14.2936 0C17.1352 0 19.471 2.36812 19.5005 5.28C19.5258 7.82109 18.6272 10.1672 16.7532 12.4519C15.8733 13.5239 14.2782 15.2386 10.5943 17.7394C10.3455 17.9089 10.0516 17.9998 9.75052 18Z" fill="#112211"/>
+            </svg>
+            <a href="" class="font-semibold text-[#112211] ms-3">Favourites</a>
+          </div>
+
+          <!-- Divider Line -->
+          <div class="w-[1.5px] h-5 bg-[#112211] hidden md:block"></div>
+
+          <div class="flex items-center justify-center mt-4 md:mt-0 me-3 md:me-0 space-x-4">
+
+            <div class="relative">
+                <img src="../assets/images/Flights-flow/flights-listing/header-login.png" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+
+                <div class="absolute bottom-1 right-2 transform translate-y-1/4 translate-x-1/4 bg-red-400 rounded-full">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-2.48609e-07 5.6875C-1.11312e-07 8.82848 2.54652 11.375 5.6875 11.375C8.82848 11.375 11.375 8.82848 11.375 5.6875C11.375 2.54652 8.82848 -3.85905e-07 5.6875 -2.48609e-07C2.54652 -1.11312e-07 -3.85905e-07 2.54652 -2.48609e-07 5.6875ZM8.00324 4.72199C8.04346 4.67966 8.09175 4.6458 8.14527 4.62242C8.19878 4.59904 8.25643 4.58661 8.31482 4.58587C8.37321 4.58512 8.43116 4.59607 8.48525 4.61807C8.53935 4.64007 8.58849 4.67268 8.62978 4.71397C8.67107 4.75526 8.70368 4.8044 8.72568 4.8585C8.74768 4.91259 8.75863 4.97054 8.75788 5.02893C8.75714 5.08732 8.74471 5.14497 8.72133 5.19848C8.69795 5.252 8.66409 5.30029 8.62176 5.34051L5.99676 7.96551C5.91472 8.04749 5.80348 8.09355 5.6875 8.09355C5.57152 8.09355 5.46028 8.04749 5.37824 7.96551L2.75324 5.34051C2.67466 5.25779 2.6315 5.14765 2.63296 5.03357C2.63442 4.91949 2.68039 4.81049 2.76106 4.72981C2.84174 4.64914 2.95074 4.60317 3.06482 4.60171C3.1789 4.60024 3.28904 4.64341 3.37176 4.72199L5.6875 7.03746L8.00324 4.72199Z" fill="#FF8682"/>
+                </svg>
+            </div>
+            </div>
+
+            <div class="text-[#112211]">
+                <h2 class="font-semibold">John D.</h2>
+            </div>
+
+          </div>
+
         </div>
         
-      </div>
     </nav>
   </section>
 </header>
 
 <main>
-  <!-- Hero Section -->
-  <section class="hero-bg min-h-[400px] md:min-h-[520px] w-full bg-cover bg-center bg-no-repeat flex items-center">
-    <div class="container mx-auto relative ">
-      <div class="max-w-2xl text-left text-white absolute left-0 -bottom-12.5 px-6">
-        
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 font-librefranklin leading-normal">
-          Make your travel <br class="hidden sm:block"> wishlist, we'll do <br class="hidden sm:block"> the rest
-        </h1>
-
-        <p class="text-base sm:text-lg md:text-xl text-white/80 font-librefranklin">
-          Special offers to suit your plan
-        </p>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- Filter (Search Card) -->
-  <section class="search-card">
-    <div class="container mx-auto px-4 -mt-24 md:-mt-20 mb-20">
-      <div class="bg-white rounded-3xl shadow-lg p-5 md:p-8">
-
-        <!-- Filter Nav Buttons -->
-        <div class="mb-6 md:gap-8 md:mb-8 text-[#112211]">
-
-          <h1 class="font-semibold text-base md:text-[20px] font-librefranklin">Where are you flying?</h1>
-
-        </div>
-
-        <!-- Filter Choice Boxes -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 mb-8">
-      
-          <!-- Destination -->
-          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
-            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">From - To</label>
-            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
-              <option>Lahore - Karachi</option>
-              <option>Karachi - Lahore</option>
-              <option>Lahore - Islamabad</option>
-              <option>Islamabad - Karachi</option>
-            </select>
-            <div class="absolute right-4 top-6.5 pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" fill="none">
-                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5.75 15.75 6l-5.25 5.25M14.947 6H.75M6 20.25.75 15 6 9.75M1.594 15H15.75"/>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Trip -->
-          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
-            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Trip</label>
-            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
-              <option>Return</option>
-              <option>One Way</option>
-              <option>Multi-City</option>
-            </select>
-            <div class="absolute right-4 top-8 pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" fill="none">
-                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75.75 7.5 7.5 14.25.75"/>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Depart - Return -->
-          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
-            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-sm text-[#112211]/50 font-semibold">Depart - Return</label>
-            <input type="text" class="w-full text-[#112211]/80 font-medium p-2 bg-transparent" placeholder="07 Nov 22 - 13 Nov 22" onfocus="(this.type='date')" />
-          </div>
-
-          <!-- Passenger - Class -->
-          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
-            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Passenger - Class</label>
-            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
-              <option>1 Passenger, Economy</option>
-              <option>2 Passengers, Economy</option>
-              <option>1 Passenger, Business</option>
-              <option>2 Passengers, Business</option>
-            </select>
-          </div>
-
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="flex flex-col justify-end items-center gap-6 md:flex-row">
-
-          <!-- Promo Code -->
-          <button class="w-full font-bold text-[#112211] hover:text-black transition py-2 md:w-auto">
-            <span class="text-lg">+</span>
-            Add Promo Code
-          </button>
-
-          <!-- Show Flights BTN -->
-          <button class="w-full bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 md:w-auto hover:scale-105 transition duration-300">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
-              </svg>
-            </span>
-            Show Flights
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Places Section (Not Finished)-->
-  <secttion class="p-12.5">
-    <div class="container mx-auto p-7">
-      <!-- Places Header -->
-      <div class="flex flex-col md:flex-row md:justify-between">
-        
-        <div class="text-center md:text-start">
-          <h2 class="text-[32px] font-semibold mb-[16px]">Let's go places together</h2>
-          <p class="text-[#112211]/50 text-[16px]">Discover the latest offers and news and start planning your next trip with us.</p>
-        </div>
-
-        <div class="text-[#112211] mt-10 text-center">
-          <a href="../flights-flow/flights-listing.html" class="border border-[#8DD3BB] rounded-lg py-[11px] px-[16px] hover:bg-[#8DD3BB] transition delay-100 duration-150 ease-in-out">See All</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Places Section Not Finished -->
-    <div class="bg-places h-[490px] bg-[#8DD3BB] bg-center bg-no-repeat"></div>
-  </secttion>
-
-  <!-- Travel Section One -->
-  <section class="p-12.5">
-    <div class="container mx-auto">
-
-      <!-- Travel Header -->
-      <div class="flex flex-col md:flex-row md:justify-between pb-10">
-        
-        <div class="text-center md:text-start">
-          <h2 class="text-[32px] font-semibold mb-[16px]">Fall into travel</h2>
-          <p class="text-[#112211]/50 text-[16px]">Going somewhere to celebrate this season? Whether you’re going home or somewhere  to roam , we’ve got the travel tools to get you to your destination.</p>
-        </div>
-
-        <div class="text-[#112211] pt-10 text-center ps-2">
-          <a href="../flights-flow/flights-listing.html" class="border border-[#8DD3BB] rounded-lg py-[11px] px-[16px] whitespace-nowrap hover:bg-[#8DD3BB] transition delay-100 duration-150 ease-in-out">See All</a>
-        </div>
-      </div>
-
-      <!-- Travel Cards -->
-      <div class="grid grid-cols-1 justify-self-center md:justify-self-stretch gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-
-        <!-- Card -->
-        <div class="rounded-2xl relative overflow-hidden">
-          <div class="h-[250px] w-[266px]">
-
-            <img src="../assets/images/Flights-flow/flights-search/travel.png" class="absolute inset-0 w-full h-full object-cover">
-          </div>
-
-          <!-- Card Content -->
-          <div class="relative flex flex-col justify-end p-6 text-white">
-
-            <!-- Card Info -->
-            <div class="flex justify-between items-end mb-4">
-              <div>
-                <h3 class="text-2xl font-semibold">Melbourne</h3>
-                <p class="text-sm text-white/80">An amazing journey</p>
-              </div>
-
-              <span class="text-xl font-semibold p-1">$700</span>
-            </div>
-
-            <!-- Card Button -->
-            <button class="w-full bg-[#8DD3BB] text-[#112211] font-medium py-3 rounded-lg hover:scale-105 transition duration-300">
-              Book Flight
-            </button>
-
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="rounded-2xl relative overflow-hidden">
-          <div class="h-[250px] w-[266px]">
-
-            <img src="../assets/images/Flights-flow/flights-search/travel.png" class="absolute inset-0 w-full h-full object-cover">
-          </div>
-
-          <!-- Card Content -->
-          <div class="relative flex flex-col justify-end p-6 text-white">
-
-            <!-- Card Info -->
-            <div class="flex justify-between items-end mb-4">
-              <div>
-                <h3 class="text-2xl font-semibold">Melbourne</h3>
-                <p class="text-sm text-white/80">An amazing journey</p>
-              </div>
-
-              <span class="text-xl font-semibold p-1">$700</span>
-            </div>
-
-            <!-- Card Button -->
-            <button class="w-full bg-[#8DD3BB] text-black font-medium py-3 rounded-lg hover:scale-105 transition duration-300">
-              Book Flight
-            </button>
-
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="rounded-2xl relative overflow-hidden">
-          <div class="h-[250px] w-[266px]">
-
-            <img src="../assets/images/Flights-flow/flights-search/travel.png" class="absolute inset-0 w-full h-full object-cover">
-          </div>
-
-          <!-- Card Content -->
-          <div class="relative flex flex-col justify-end p-6 text-white">
-
-            <!-- Card Info -->
-            <div class="flex justify-between items-end mb-4">
-              <div>
-                <h3 class="text-2xl font-semibold">Melbourne</h3>
-                <p class="text-sm text-white/80">An amazing journey</p>
-              </div>
-
-              <span class="text-xl font-semibold p-1">$700</span>
-            </div>
-
-            <!-- Card Button -->
-            <button class="w-full bg-[#8DD3BB] text-black font-medium py-3 rounded-lg hover:scale-105 transition duration-300">
-              Book Flight
-            </button>
-
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="rounded-2xl relative overflow-hidden">
-          <div class="h-[250px] w-[266px]">
-
-            <img src="../assets/images/Flights-flow/flights-search/travel.png" class="absolute inset-0 w-full h-full object-cover">
-          </div>
-
-          <!-- Card Content -->
-          <div class="relative flex flex-col justify-end p-6 text-white">
-
-            <!-- Card Info -->
-            <div class="flex justify-between items-end mb-4">
-              <div>
-                <h3 class="text-2xl font-semibold">Melbourne</h3>
-                <p class="text-sm text-white/80">An amazing journey</p>
-              </div>
-
-              <span class="text-xl font-semibold p-1">$700</span>
-            </div>
-
-            <!-- Card Button -->
-            <button class="w-full bg-[#8DD3BB] text-black font-medium py-3 rounded-lg hover:scale-105 transition duration-300">
-              Book Flight
-            </button>
-
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- Travel Section Two -->
-  <section class="p-12 5">
-    <div class="container mx-auto">
-      <!-- Travel Header -->
-      <div class="flex flex-col md:flex-row md:justify-between pb-10">
-        
-        <div class="text-center md:text-start">
-          <h2 class="text-[32px] font-semibold mb-[16px]">Fall into travel</h2>
-          <p class="text-[#112211]/50 text-[16px]">Going somewhere to celebrate this season? Whether you’re going home or somewhere  to roam , we’ve got the travel tools to get you to your destination.</p>
-        </div>
-
-        <div class="text-[#112211] pt-10 text-center ps-2">
-          <a href="../flights-flow/flights-listing.html" class="border border-[#8DD3BB] rounded-lg py-[11px] px-[16px] whitespace-nowrap hover:bg-[#8DD3BB] transition delay-100 duration-150 ease-in-out">See All</a>
-        </div>
-      </div>
-
-      <!-- Travel Cards -->
-      <div class="w-full px-4 sm:px-6 lg:px-8">
-
-          <div class="grid grid-cols-1 lg:grid-cols-5 md:justify-self-stretch gap-4 md:gap-6">
-
-            <!-- Left Section -->
-            <div class="lg:col-span-3 bg-[#94D1B8] rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden min-h-[350px] sm:min-h-[400px] md:min-h-[450px] order-1 lg:order-none">
-              
-              <!-- Header & Price -->
-              <div class="flex flex-col md:flex-row md:justify-between items-center sm:items-center gap-4 sm:gap-0">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#112211]">
-                  Backpacking <br class="block md:hidden"/>Sri Lanka
-                </h1>
-                <div class="bg-white rounded-xl p-2 sm:p-3 shadow-sm text-center min-w-[70px] sm:min-w-[80px] mt-4 me-4 md:mt-0">
-                  <p class="text-xs text-[#112211]/50 font-semibold">From</p>
-                  <p class="text-lg sm:text-xl font-bold text-[#112211]">$700</p>
-                </div>
-              </div>
-
-              <!-- Description -->
-              <div class="mt-6 sm:mt-8">
-                <p class="text-[#112211] text-sm sm:text-base leading-relaxed ">
-                  Traveling is a unique experience as it's the best way to unplug from the pushes and pulls of daily life. It helps us to forget about our problems, frustrations, and fears at home. During our journey, we experience life in different ways. We explore new places, cultures, cuisines, traditions, and ways of living.
-                </p>
-              </div>
-
-              <!-- Booking BTN -->
-              <button class="mt-8 sm:mt-10 w-full bg-white text-[#112211] font-semibold py-3 sm:py-4 rounded-xl hover:bg-gray-100 transition ease-in-out duration-300 text-sm sm:text-base">
-                Book Flight
-              </button>
-            </div>
-
-            <!-- Right Section Cards -->
-            <div class="lg:col-span-2 grid grid-cols-2 gap-3 sm:gap-4 order-2">
-              
-              <!-- Card -->
-              <div class="overflow-hidden rounded-2xl border-2 sm:border-4 border-[#8DD3BB]">
-                <img src="../assets/images/Flights-flow/flights-search/traveltwo.png"
-                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-              </div>
-
-              <!-- Card -->
-              <div class="overflow-hidden rounded-2xl border-2 sm:border-4 border-[#8DD3BB]">
-                <img src="../assets/images/Flights-flow/flights-search/traveltwo.png"
-                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-              </div>
-
-              <!-- Card -->
-              <div class="overflow-hidden rounded-2xl border-2 sm:border-4 border-[#8DD3BB]">
-                <img src="../assets/images/Flights-flow/flights-search/traveltwo.png"
-                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-              </div>
-
-              <!-- Card -->
-              <div class="overflow-hidden rounded-2xl border-2 sm:border-4 border-[#8DD3BB]">
-                <img src="../assets/images/Flights-flow/flights-search/traveltwo.png"
-                  class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-              </div>
-              
-            </div>
-
-          </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Subscribe Card -->
   <section class="sub-card">
