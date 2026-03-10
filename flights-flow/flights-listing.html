@@ -168,7 +168,7 @@
             </div>
 
             <!-- Search Button -->
-            <button class="bg-[#8DD3BB] rounded-xl flex items-center justify-center p-5 md:col-span-2 lg:col-span-1">
+            <button class="bg-[#8DD3BB] rounded-xl flex items-center justify-center p-5 md:col-span-2 lg:col-span-1 hover:scale-105 transition ease-in-out">
                 <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.19043 0.0234375C12.6932 0.0236703 16.3564 3.68758 16.3564 8.19043C16.3583 9.9531 15.7871 11.6687 14.7285 13.0781L14.7158 13.0947L14.7305 13.1084L19.1396 17.5176V17.5186C19.3351 17.7373 19.4398 18.0222 19.4316 18.3154C19.4234 18.6088 19.3032 18.8882 19.0957 19.0957C18.8882 19.3032 18.6088 19.4234 18.3154 19.4316C18.0589 19.4387 17.8086 19.3597 17.6035 19.209L17.5186 19.1396L13.1084 14.7305L13.0947 14.7158L13.0781 14.7285C11.6687 15.7871 9.9531 16.3583 8.19043 16.3564C3.68758 16.3564 0.0236703 12.6932 0.0234375 8.19043C0.0234375 3.68744 3.68744 0.0234375 8.19043 0.0234375ZM9.33594 2.42969C8.19661 2.20306 7.0156 2.31914 5.94238 2.76367C4.86923 3.20819 3.95202 3.96097 3.30664 4.92676C2.66126 5.89264 2.31641 7.02877 2.31641 8.19043C2.31838 9.74741 2.93812 11.2398 4.03906 12.3408C5.14014 13.4419 6.63328 14.0616 8.19043 14.0635C9.35194 14.0634 10.4874 13.7185 11.4531 13.0732C12.4189 12.4279 13.1717 11.5107 13.6162 10.4375C14.0607 9.36429 14.1768 8.18325 13.9502 7.04395C13.7235 5.90471 13.1641 4.85846 12.3428 4.03711C11.5214 3.21576 10.4752 2.65633 9.33594 2.42969Z" fill="#112211" stroke="#112211" stroke-width="0.046875"/>
                 </svg>
@@ -182,7 +182,7 @@
   <!-- Fliters & Flights Section -->
    <section class="p-12 5">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-[400px_1fr]">
+        <div class="grid grid-cols-1 lg:grid-cols-[400px_50px_1fr]">
             
             <!-- Lefts Sections (Filters) -->
             <div class="filters">
@@ -214,7 +214,7 @@
 
                 </div>
 
-                 <!-- Divider Line -->
+                <!-- Divider Line -->
                 <div class="w-py h-[1px] bg-[#112211]/40"></div>
 
                 <!-- Departure Time -->
@@ -339,13 +339,419 @@
                 </div>
             </div>
 
+            <!-- Divider Line -->
+            <div class="hidden md:block ms-6 w-px h-py h-full bg-[#112211]/30"></div>
+
             <!-- Right Section -->
-            <div class="flights">
+            <div class="flights px-4 md:px-0">
                 
                 <!-- Prices -->
-                <div class="grid md:grid-cols-4">
-                    
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-[1fr_25px_1fr_25px_1fr_25px_1fr] bg-white rounded-xl shadow-sm items-center">
+
+                    <!-- Cheapest -->
+                    <button class="flex flex-col items-start p-4 transition-colors xl:border-b-5 xl:border-transparent xl:hover:border-[#8DD3BB] lg:me-5 xl:mx-5">
+                        <span class="font-bold text-[#112211] text-lg mb-2">Cheapest</span>
+                        <span class="text-[#112211]/30 text-sm">$99 · 2h 18m</span>
+                    </button>
+
+                    <!-- Divider Line -->
+                    <div class="w-py h-[1px] lg:w-[1.5px] lg:h-14 lg:hidden xl:block bg-[#112211]/30"></div>
+
+
+                    <!-- Best -->
+                    <button class="flex flex-col items-start p-4 transition-colors xl:border-b-5 xl:border-transparent xl:hover:border-[#8DD3BB] lg:me-5 ">
+                        <span class="font-bold text-[#112211] text-lg mb-1">Best</span>
+                        <span class="text-[#112211]/30 text-sm">$99 · 2h 18m</span>
+                    </button>
+
+                    <!-- Divider Line -->
+                    <div class="w-py h-[1px] lg:w-[1.5px] lg:h-14 lg:hidden xl:block bg-[#112211]/30 "></div>
+
+                    <!-- Quickest -->
+                    <button class="flex flex-col items-start p-4 transition-colors xl:border-b-5 xl:border-transparent xl:hover:border-[#8DD3BB] lg:me-5">
+                        <span class="font-bold text-[#112211] text-lg mb-2">Quickest</span>
+                        <span class="text-[#112211]/30 text-sm">$99 · 2h 18m</span>
+                    </button>
+
+                    <!-- Divider Line -->
+                    <div class="w-py h-[1px] lg:w-[1.5px] lg:h-14 lg:hidden xl:block bg-[#112211]/30 "></div>
+
+                    <!-- Other Sort -->
+                    <button class="flex items-center gap-3 transition-colors hover:bg-[#8DD3BB] p-4 rounded-lg lg:me-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="#121" viewBox="-0.5 0 25 25">
+                            <g stroke="#121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M2 12.32h20M2 18.32h20M2 6.32h20"/></g>
+                            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M2 12.32h20M2 18.32h20M2 6.32h20"/></g>
+                        </svg>
+                        <span class="font-medium">Other sort</span>
+                    </button>
+
                 </div>
+
+                <!-- Search Result Line -->
+                <div class="flex flex-col gap-8 lg:flex-row items-center justify-between w-full py-8">
+                    <div class="text-[#112211] font-semibold text-lg">
+                        Showing 4 of <span class="text-red-500">257 places</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#112211]/50">Sort by</span>
+                        <span class="font-bold text-[#112211]">Recommended</span>
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 0.75L5.8125 5.8125L10.875 0.75" stroke="#112211" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Flights Cards -->
+                <div class="py-8 grid grid-cols-1 gap-8">
+
+                    <!-- Card -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 grid grid-cols-1 xl:grid-cols-[200px_1fr]">
+
+                        <!-- Card img -->
+                        <div class="flex flex-col items-center xl:items-start">
+                            <img src="../assets/images/Flights-flow/flights-listing/flighs-listing-right.png" alt="">
+                        </div>
+
+                        <!-- Card Info -->
+                        <div class="flex flex-col gap-3 md:gap-4">
+
+                            <!-- Rating -->
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                                <div class="flex items-center mt-5 md:mt-0">
+                                    <span class="px-2 py-1 border border-[#8DD3BB] text-[#112211] rounded text-sm font-semibold">4.2</span>
+                                    <span class="font-bold text-[#112211] mx-3">Very Good</span>
+                                    <span class="text-[#112211]/50 text-sm">54 reviews</span>
+                                </div>
+
+                                <div class="px-6 py-3 text-center rounded-md inline-block">
+                                    <p class="text-[#112211]/50 text-sm">starting from</p>
+                                    <p class="text-red-400 text-2xl font-semibold">$104</p>
+                                </div>
+                            </div>
+
+                            <!-- Time OF The Flight -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mt-5 md:mt-0">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider Line -->
+                            <div class="w-py h-px w-full bg-[#112211]/30"></div>
+
+                            <div class="flex flex-col xl:flex-row gap-3">
+                                <button class="rounded-lg border-2 border-[#8DD3BB] p-4 hover:bg-[#8DD3BB] flex justify-center w-full lg:w-auto">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0363 0.75C9.5004 0.75 8.2504 3.25 8.2504 3.25C8.2504 3.25 7.0004 0.75 4.46446 0.75C2.40352 0.75 0.771493 2.47422 0.750399 4.53164C0.707431 8.80234 4.13829 11.8395 7.89884 14.3918C8.00251 14.4623 8.12501 14.5001 8.2504 14.5001C8.37579 14.5001 8.49829 14.4623 8.60196 14.3918C12.3621 11.8395 15.793 8.80234 15.7504 4.53164C15.7293 2.47422 14.0973 0.75 12.0363 0.75V0.75Z" stroke="#4C4850" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+
+                                <button class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out">
+                                    View Deals
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 grid grid-cols-1 xl:grid-cols-[200px_1fr]">
+
+                        <!-- Card img -->
+                        <div class="flex flex-col items-center xl:items-start">
+                            <img src="../assets/images/Flights-flow/flights-listing/flighs-listing-right.png" alt="">
+                        </div>
+
+                        <!-- Card Info -->
+                        <div class="flex flex-col gap-3 md:gap-4">
+
+                            <!-- Rating -->
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                                <div class="flex items-center mt-5 md:mt-0">
+                                    <span class="px-2 py-1 border border-[#8DD3BB] text-[#112211] rounded text-sm font-semibold">4.2</span>
+                                    <span class="font-bold text-[#112211] mx-3">Very Good</span>
+                                    <span class="text-[#112211]/50 text-sm">54 reviews</span>
+                                </div>
+
+                                <div class="px-6 py-3 text-center rounded-md inline-block">
+                                    <p class="text-[#112211]/50 text-sm">starting from</p>
+                                    <p class="text-red-400 text-2xl font-semibold">$104</p>
+                                </div>
+                            </div>
+
+                            <!-- Time OF The Flight -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mt-5 md:mt-0">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider Line -->
+                            <div class="w-py h-px w-full bg-[#112211]/30"></div>
+
+                            <div class="flex flex-col xl:flex-row gap-3">
+                                <button class="rounded-lg border-2 border-[#8DD3BB] p-4 hover:bg-[#8DD3BB] flex justify-center w-full lg:w-auto">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0363 0.75C9.5004 0.75 8.2504 3.25 8.2504 3.25C8.2504 3.25 7.0004 0.75 4.46446 0.75C2.40352 0.75 0.771493 2.47422 0.750399 4.53164C0.707431 8.80234 4.13829 11.8395 7.89884 14.3918C8.00251 14.4623 8.12501 14.5001 8.2504 14.5001C8.37579 14.5001 8.49829 14.4623 8.60196 14.3918C12.3621 11.8395 15.793 8.80234 15.7504 4.53164C15.7293 2.47422 14.0973 0.75 12.0363 0.75V0.75Z" stroke="#4C4850" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+
+                                <button class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out">
+                                    View Deals
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 grid grid-cols-1 xl:grid-cols-[200px_1fr]">
+
+                        <!-- Card img -->
+                        <div class="flex flex-col items-center xl:items-start">
+                            <img src="../assets/images/Flights-flow/flights-listing/flighs-listing-right.png" alt="">
+                        </div>
+
+                        <!-- Card Info -->
+                        <div class="flex flex-col gap-3 md:gap-4">
+
+                            <!-- Rating -->
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                                <div class="flex items-center mt-5 md:mt-0">
+                                    <span class="px-2 py-1 border border-[#8DD3BB] text-[#112211] rounded text-sm font-semibold">4.2</span>
+                                    <span class="font-bold text-[#112211] mx-3">Very Good</span>
+                                    <span class="text-[#112211]/50 text-sm">54 reviews</span>
+                                </div>
+
+                                <div class="px-6 py-3 text-center rounded-md inline-block">
+                                    <p class="text-[#112211]/50 text-sm">starting from</p>
+                                    <p class="text-red-400 text-2xl font-semibold">$104</p>
+                                </div>
+                            </div>
+
+                            <!-- Time OF The Flight -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mt-5 md:mt-0">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider Line -->
+                            <div class="w-py h-px w-full bg-[#112211]/30"></div>
+
+                            <div class="flex flex-col xl:flex-row gap-3">
+                                <button class="rounded-lg border-2 border-[#8DD3BB] p-4 hover:bg-[#8DD3BB] flex justify-center w-full lg:w-auto">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0363 0.75C9.5004 0.75 8.2504 3.25 8.2504 3.25C8.2504 3.25 7.0004 0.75 4.46446 0.75C2.40352 0.75 0.771493 2.47422 0.750399 4.53164C0.707431 8.80234 4.13829 11.8395 7.89884 14.3918C8.00251 14.4623 8.12501 14.5001 8.2504 14.5001C8.37579 14.5001 8.49829 14.4623 8.60196 14.3918C12.3621 11.8395 15.793 8.80234 15.7504 4.53164C15.7293 2.47422 14.0973 0.75 12.0363 0.75V0.75Z" stroke="#4C4850" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+
+                                <button class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out">
+                                    View Deals
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 grid grid-cols-1 xl:grid-cols-[200px_1fr]">
+
+                        <!-- Card img -->
+                        <div class="flex flex-col items-center xl:items-start">
+                            <img src="../assets/images/Flights-flow/flights-listing/flighs-listing-right.png" alt="">
+                        </div>
+
+                        <!-- Card Info -->
+                        <div class="flex flex-col gap-3 md:gap-4">
+
+                            <!-- Rating -->
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                                <div class="flex items-center mt-5 md:mt-0">
+                                    <span class="px-2 py-1 border border-[#8DD3BB] text-[#112211] rounded text-sm font-semibold">4.2</span>
+                                    <span class="font-bold text-[#112211] mx-3">Very Good</span>
+                                    <span class="text-[#112211]/50 text-sm">54 reviews</span>
+                                </div>
+
+                                <div class="px-6 py-3 text-center rounded-md inline-block">
+                                    <p class="text-[#112211]/50 text-sm">starting from</p>
+                                    <p class="text-red-400 text-2xl font-semibold">$104</p>
+                                </div>
+                            </div>
+
+                            <!-- Time OF The Flight -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mt-5 md:mt-0">
+
+                                <div class="flex items-center gap-3 w-full sm:w-auto">
+                                    <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 rounded flex-shrink-0">
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 w-full">
+                                        <div>
+                                            <p class="font-bold text-[#112211] text-sm md:text-base">12:00 pm - 01:28 pm</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm">Emirates</p>
+                                        </div>
+                                        <div class="text-left sm:text-center">
+                                            <p class="text-[#112211]/90 text-xs md:text-sm">non stop</p>
+                                        </div>
+                                        <div class="text-left sm:text-right">
+                                            <p class="font-semibold text-[#112211] text-sm md:text-base">2h 28m</p>
+                                            <p class="text-[#112211]/50 text-xs md:text-sm uppercase">EWR-BNA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider Line -->
+                            <div class="w-py h-px w-full bg-[#112211]/30"></div>
+
+                            <div class="flex flex-col xl:flex-row gap-3">
+                                <button class="rounded-lg border-2 border-[#8DD3BB] p-4 hover:bg-[#8DD3BB] flex justify-center w-full lg:w-auto">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0363 0.75C9.5004 0.75 8.2504 3.25 8.2504 3.25C8.2504 3.25 7.0004 0.75 4.46446 0.75C2.40352 0.75 0.771493 2.47422 0.750399 4.53164C0.707431 8.80234 4.13829 11.8395 7.89884 14.3918C8.00251 14.4623 8.12501 14.5001 8.2504 14.5001C8.37579 14.5001 8.49829 14.4623 8.60196 14.3918C12.3621 11.8395 15.793 8.80234 15.7504 4.53164C15.7293 2.47422 14.0973 0.75 12.0363 0.75V0.75Z" stroke="#4C4850" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+
+                                <button class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out">
+                                    View Deals
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Button -->
+                    <div class="text-center">
+                        <button class="text-white bg-[#112211] rounded-lg w-full py-5">Show more results</button>
+                    </div>
+
+                </div>
+            
             </div>
         
         </div>
