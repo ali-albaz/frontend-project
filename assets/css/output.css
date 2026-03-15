@@ -649,6 +649,12 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-baseline {
+    justify-content: baseline;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -678,6 +684,9 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-50 {
+    gap: calc(var(--spacing) * 50);
   }
   .gap-\[16px\] {
     gap: 16px;
@@ -790,6 +799,9 @@
   }
   .bg-\[\#8DD3BB\]\/40 {
     background-color: color-mix(in oklab, #8DD3BB 40%, transparent);
+  }
+  .bg-\[\#8DD3BB\]\/60 {
+    background-color: color-mix(in oklab, #8DD3BB 60%, transparent);
   }
   .bg-\[\#94D1B8\] {
     background-color: #94D1B8;
@@ -1904,6 +1916,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:gap-0 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .lg\:p-10 {
