@@ -28,6 +28,10 @@
     background-image: url('../images/Flights-flow/flights-search/hero.jpg');
 }
 
+.hotel-hero-bg{
+    background-image: url('../images/Hotel-flow/hotel-serch/hero.png');
+}
+
 
 .bg-places{
     background-image: url('../images/Flights-flow/flights-search/places.png');
