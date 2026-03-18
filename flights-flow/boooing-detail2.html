@@ -340,15 +340,105 @@
                         </div>
                     </div>
 
-                    <div class="border-3 border-dashed border-[#8DD3BB] rounded-xl h-50 flex flex-col items-center justify-center text-[#112211]/50 hover:bg-[#8DD3BB]/50 cursor-pointer duration-100 transition">
+                    <button onclick="openModal()" class="border-3 border-dashed border-[#8DD3BB] rounded-xl h-50 flex flex-col items-center justify-center text-[#112211]/50 hover:bg-[#8DD3BB]/50 cursor-pointer duration-100 transition">
 
                         <div class="w-12 h-12 rounded-full border-3 border-[#8DD3BB] flex items-center justify-center text-3xl text-[#8DD3BB] mb-2">
                             +
                         </div>
 
-                        <button class="text-sm">Add a new card</button>
+                        <p class="text-sm">Add a new card</p>
+
+                    </button>
+
+                    <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+
+                      <div class="bg-white rounded-lg shadow-lg w-160 p-16 mx-4">
+
+                        <!-- Exit Button -->
+                        <div class="flex items-center justify-end">
+                          <button onclick="closeModal()" class=" cursor-pointer hover:scale-90 transition duration-100 ease-in-out">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9721 1.57214C14.0577 1.48672 14.1255 1.38531 14.1718 1.27367C14.2182 1.16203 14.242 1.04237 14.2421 0.921502C14.2422 0.800637 14.2184 0.680941 14.1723 0.569248C14.1261 0.457555 14.0583 0.356052 13.9729 0.270536C13.8875 0.185019 13.7861 0.117163 13.6745 0.0708412C13.5628 0.0245197 13.4432 0.000640007 13.3223 0.00056572C13.2014 0.000491433 13.0817 0.024224 12.97 0.0704082C12.8584 0.116593 12.7569 0.184324 12.6713 0.269736L7.12094 5.82014L1.57214 0.269736C1.39943 0.0970267 1.16518 -1.81979e-09 0.920936 0C0.676688 1.81978e-09 0.442445 0.0970267 0.269736 0.269736C0.0970267 0.442445 1.81979e-09 0.676688 0 0.920936C-1.81978e-09 1.16518 0.0970267 1.39943 0.269736 1.57214L5.82014 7.12094L0.269736 12.6697C0.184219 12.7553 0.116383 12.8568 0.0701019 12.9685C0.0238206 13.0802 0 13.2 0 13.3209C0 13.4419 0.0238206 13.5616 0.0701019 13.6734C0.116383 13.7851 0.184219 13.8866 0.269736 13.9721C0.442445 14.1448 0.676688 14.2419 0.920936 14.2419C1.04187 14.2419 1.16163 14.2181 1.27336 14.1718C1.3851 14.1255 1.48662 14.0577 1.57214 13.9721L7.12094 8.42174L12.6713 13.9721C12.844 14.1446 13.0782 14.2415 13.3223 14.2413C13.5664 14.2412 13.8004 14.144 13.9729 13.9713C14.1454 13.7986 14.2423 13.5645 14.2421 13.3204C14.242 13.0763 14.1448 12.8422 13.9721 12.6697L8.42174 7.12094L13.9721 1.57214Z" fill="black"/>
+                            </svg>
+                          </button>
+                        </div>
+
+                        <!-- Header -->
+                        <h2 class="text-[40px] font-bold font-librefranklin mb-4">Add a new Card</h2>
+
+                        <form action="" class="py-10 flex flex-col gap-6">
+
+                          <!--Visa Text-->
+                          <div class="relative">
+                            <label for="" class="absolute bg-white px-2 left-2 -top-2 text-sm text-[#112211]/50">Card Number</label>
+                            <input type="text" class="border border-[#79747E]/30 rounded p-4 w-full">
+                            
+                            <span class="absolute right-3 top-5">
+                              <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.96 0C0.429912 0 0 0.429792 0 0.96V14.112C0 14.6422 0.430128 15.072 0.96 15.072H23.04C23.5701 15.072 24 14.6422 24 14.112V0.96C24 0.429816 23.5699 0 23.04 0H0.96ZM14.334 4.49174C14.9181 4.49174 15.3862 4.62077 15.6847 4.74074L15.4807 6.024L15.3457 5.95574C15.0677 5.83577 14.7105 5.7203 14.2177 5.72849C13.6279 5.72849 13.3553 5.9916 13.3553 6.23777C13.3518 6.51514 13.6739 6.69806 14.2005 6.972C15.0697 7.39464 15.4714 7.90709 15.4658 8.58074C15.4541 9.80995 14.426 10.6043 12.8423 10.6043C12.1666 10.5968 11.5156 10.4538 11.1637 10.2885L11.3753 8.96249L11.5695 9.057C12.0643 9.27809 12.3847 9.36751 12.9877 9.36751C13.4208 9.36751 13.8856 9.18619 13.8893 8.78926C13.8921 8.53006 13.695 8.34526 13.1085 8.055C12.537 7.7717 11.7794 7.29715 11.7878 6.44626C11.7967 5.29519 12.8453 4.49174 14.334 4.49174ZM2.12249 4.68H4.55474C4.88227 4.69238 5.1467 4.79784 5.238 5.15326L5.76226 7.85926C5.76233 7.8595 5.76216 7.86048 5.76226 7.86074L5.91974 8.67151L7.39649 4.68H8.994L6.61949 10.5225L5.02349 10.524L3.753 5.80949C4.50895 6.20998 5.15254 6.67334 5.52526 7.311C5.42916 7.10923 5.30254 6.88147 5.14051 6.657C4.95182 6.39559 4.54433 6.05808 4.374 5.91449C3.78048 5.41416 2.97444 5.01007 2.10374 4.79626L2.12249 4.68ZM9.62926 4.68674H11.1915L10.2142 10.5203H8.652L9.62926 4.68674ZM18.453 4.68674H19.6365L20.8755 10.5203H19.455C19.455 10.5203 19.3141 9.85008 19.2683 9.64574C19.045 9.64574 17.4834 9.64351 17.3077 9.64351C17.2483 9.80143 16.9853 10.5202 16.9853 10.5202H15.378L17.6513 5.17126C17.8122 4.79114 18.0865 4.68674 18.453 4.68674ZM18.5693 6.25574C18.4924 6.47273 18.3585 6.82313 18.3675 6.80774C18.3675 6.80774 17.8866 8.0903 17.7608 8.42326L19.0245 8.42249C18.9071 7.86623 18.7896 7.31 18.672 6.75379L18.5693 6.25579V6.25574Z" fill="#1434CB"/>
+                              </svg>
+                            </span>
+                          </div>
+
+                          <!-- Exp Date & CVC -->
+                          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                            <!-- Exp Date -->
+                            <div class="relative">
+                              <label for="" class="absolute bg-white px-2 left-2 -top-2 text-sm text-[#112211]/50">Exp. Date</label>
+                              <input type="date" class="border border-[#79747E]/30 rounded p-4 w-full">
+                            </div>
+
+                            <!-- CVC -->
+                            <div class="relative">
+                              <label for="" class="absolute bg-white px-2 left-2 -top-2 text-sm text-[#112211]/50">CVC</label>
+                              <input type="text" class="border border-[#79747E]/30 rounded p-4 w-full">
+                            </div>
+
+                          </div>
+
+                          <!-- Name ON Card -->
+                          <div class="relative">
+                            <label for="" class="absolute bg-white px-2 left-2 -top-2 text-sm text-[#112211]/50">Name on Card</label>
+                            <input type="text" class="border border-[#79747E]/30 rounded p-4 w-full">
+                          </div>
+
+                          <!-- Country OR Region -->
+                          <div class="relative border border-[#79747E]/30 rounded">
+                            <label class="absolute left-2 -top-2 bg-white px-1.5 text-sm text-[#112211]/50 font-semibold">Country or Region</label>
+                            <select class="w-full text-[#112211]/60 font-medium p-4 bg-transparent appearance-none">
+                              <option>United States</option>
+                              <option>United States</option>
+                              <option>United Kingdom</option>
+                            </select>
+                            <div class="absolute right-4 top-6.5 pointer-events-none">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" fill="none">
+                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75.75 7.5 7.5 14.25.75"/>
+                              </svg>
+                            </div>
+                          </div>
+
+                          <!-- Check Box -->
+                          <div class="flex items-center gap-2">
+                            <input type="checkbox" name="" id="" class="w-5 h-5 accent-black" checked>
+                            <label for="" class="text-[#112211] text-sm mt-1">Securely save my information for 1-click checkout</label>
+                          </div>
+
+                          <!-- Add Card BTN -->
+                          <div class="mt-8">
+                            <button type="submit" class="w-full bg-[#8DD3BB] text-[#112211] p-5 rounded font-semibold text-center hover:scale-95 transition duration-150 ease-in-out">Add Card</button>
+                          </div>
+
+                          <div class="flex items-center justify-center">
+                            <p class="text-[#112211]/50 text-xs text-center">By confirming your subscription, you allow The Outdoor Inn Crowd Limited to charge your card for this payment and future payments in accordance with their terms. You can always cancel your subscription.</p>
+                          </div>
+
+                        </form>
+
+                      </div>
 
                     </div>
+                    
                 </div>
 
             </div>
@@ -655,6 +745,21 @@ menuBtn.addEventListener('click',() => {
     mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('grid');
 });
+
+
+/* Modal */
+
+function openModal() {
+  const modal = document.getElementById("modal");
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+}
+
+function closeModal() {
+  const modal = document.getElementById("modal");
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
+}
 </script>
 </body>
 </html>
