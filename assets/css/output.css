@@ -383,6 +383,15 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
+  .my-12 {
+    margin-block: calc(var(--spacing) * 12);
+  }
   .ms-1 {
     margin-inline-start: calc(var(--spacing) * 1);
   }
@@ -488,6 +497,9 @@
   .table {
     display: table;
   }
+  .aspect-auto {
+    aspect-ratio: auto;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -583,6 +595,9 @@
   }
   .min-h-\[500px\] {
     min-height: 500px;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
@@ -723,6 +738,9 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .grid-cols-\[auto\,1fr\] {
     grid-template-columns: auto,1fr;
   }
@@ -850,6 +868,20 @@
     border-top-left-radius: var(--radius-2xl);
     border-top-right-radius: var(--radius-2xl);
   }
+  .rounded-l-xl {
+    border-top-left-radius: var(--radius-xl);
+    border-bottom-left-radius: var(--radius-xl);
+  }
+  .rounded-r-xl {
+    border-top-right-radius: var(--radius-xl);
+    border-bottom-right-radius: var(--radius-xl);
+  }
+  .rounded-tr-xl {
+    border-top-right-radius: var(--radius-xl);
+  }
+  .rounded-br-xl {
+    border-bottom-right-radius: var(--radius-xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -924,6 +956,9 @@
   }
   .bg-\[\#112211\]\/40 {
     background-color: color-mix(in oklab, #112211 40%, transparent);
+  }
+  .bg-\[\#112211\]\/50 {
+    background-color: color-mix(in oklab, #112211 50%, transparent);
   }
   .bg-\[\#CDEAE1\] {
     background-color: #CDEAE1;
@@ -2223,6 +2258,12 @@
       border-bottom-left-radius: var(--radius-2xl);
     }
   }
+  .lg\:rounded-l-xl {
+    @media (width >= 64rem) {
+      border-top-left-radius: var(--radius-xl);
+      border-bottom-left-radius: var(--radius-xl);
+    }
+  }
   .lg\:rounded-r-2xl {
     @media (width >= 64rem) {
       border-top-right-radius: var(--radius-2xl);
@@ -2232,6 +2273,16 @@
   .lg\:rounded-tr-2xl {
     @media (width >= 64rem) {
       border-top-right-radius: var(--radius-2xl);
+    }
+  }
+  .lg\:rounded-tr-xl {
+    @media (width >= 64rem) {
+      border-top-right-radius: var(--radius-xl);
+    }
+  }
+  .lg\:rounded-br-xl {
+    @media (width >= 64rem) {
+      border-bottom-right-radius: var(--radius-xl);
     }
   }
   .lg\:p-10 {
