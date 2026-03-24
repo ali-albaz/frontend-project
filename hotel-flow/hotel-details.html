@@ -1003,7 +1003,6 @@
     </div>
   </section>
 
-
 </main>
 
 <!-- Footer -->
@@ -1160,5 +1159,16 @@
           
       </div>
 </footer>
+
+<script>
+/* Navbar Menu Hamburger */
+const menuBtn = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click',() => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('grid');
+});
+</script>
 </body>
 </html>
