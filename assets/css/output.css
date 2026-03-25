@@ -678,11 +678,20 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
   .h-14 {
     height: calc(var(--spacing) * 14);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-36 {
     height: calc(var(--spacing) * 36);
@@ -806,6 +815,9 @@
   }
   .w-\[400px\] {
     width: 400px;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-fit {
     width: fit-content;
@@ -1242,6 +1254,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-5\.5 {
+    padding: calc(var(--spacing) * 5.5);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -2127,6 +2142,11 @@
       height: calc(var(--spacing) * 5);
     }
   }
+  .md\:h-16 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 16);
+    }
+  }
   .md\:h-48 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 48);
@@ -2203,6 +2223,11 @@
       grid-auto-flow: column;
     }
   }
+  .md\:grid-cols-1 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2221,6 +2246,11 @@
   .md\:grid-cols-5 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[1fr_10px_1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 1fr 10px 1fr;
     }
   }
   .md\:grid-cols-\[1fr_15px_1fr_15px_1fr\] {
