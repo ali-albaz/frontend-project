@@ -308,11 +308,32 @@
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
   .right-7 {
     right: calc(var(--spacing) * 7);
   }
   .right-15 {
     right: calc(var(--spacing) * 15);
+  }
+  .right-20 {
+    right: calc(var(--spacing) * 20);
+  }
+  .right-25 {
+    right: calc(var(--spacing) * 25);
+  }
+  .right-30 {
+    right: calc(var(--spacing) * 30);
+  }
+  .right-50 {
+    right: calc(var(--spacing) * 50);
+  }
+  .right-70 {
+    right: calc(var(--spacing) * 70);
+  }
+  .right-100 {
+    right: calc(var(--spacing) * 100);
   }
   .right-\[26\.20px\] {
     right: 26.20px;
@@ -1913,9 +1934,34 @@
       position: absolute;
     }
   }
+  .md\:fixed {
+    @media (width >= 48rem) {
+      position: fixed;
+    }
+  }
+  .md\:sticky {
+    @media (width >= 48rem) {
+      position: sticky;
+    }
+  }
   .md\:top-auto {
     @media (width >= 48rem) {
       top: auto;
+    }
+  }
+  .md\:right-15 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 15);
+    }
+  }
+  .md\:right-20 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:right-25 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 25);
     }
   }
   .md\:bottom-7 {
@@ -2300,6 +2346,21 @@
       font-size: 80px;
     }
   }
+  .lg\:right-30 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:right-70 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 70);
+    }
+  }
+  .lg\:right-100 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 100);
+    }
+  }
   .lg\:order-none {
     @media (width >= 64rem) {
       order: 0;
@@ -2535,6 +2596,26 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .xl\:right-25 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 25);
+    }
+  }
+  .xl\:right-50 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 50);
+    }
+  }
+  .xl\:right-70 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 70);
+    }
+  }
+  .xl\:right-100 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 100);
+    }
+  }
   .xl\:order-1 {
     @media (width >= 80rem) {
       order: 1;
@@ -2653,6 +2734,21 @@
           border-color: #8DD3BB;
         }
       }
+    }
+  }
+  .\32 xl\:right-50 {
+    @media (width >= 96rem) {
+      right: calc(var(--spacing) * 50);
+    }
+  }
+  .\32 xl\:right-70 {
+    @media (width >= 96rem) {
+      right: calc(var(--spacing) * 70);
+    }
+  }
+  .\32 xl\:right-100 {
+    @media (width >= 96rem) {
+      right: calc(var(--spacing) * 100);
     }
   }
 }
