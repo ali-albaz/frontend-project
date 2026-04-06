@@ -85,7 +85,7 @@
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="mt-0.5" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.75052 18C9.44944 17.9996 9.15544 17.9086 8.90677 17.7389C5.22286 15.2381 3.62771 13.5234 2.74786 12.4514C0.872864 10.1663 -0.024792 7.82016 0.000520508 5.27953C0.0300518 2.36813 2.36583 0 5.2074 0C7.27365 0 8.70474 1.16391 9.53818 2.13328C9.56458 2.16368 9.5972 2.18805 9.63383 2.20476C9.67047 2.22146 9.71026 2.23011 9.75052 2.23011C9.79078 2.23011 9.83058 2.22146 9.86721 2.20476C9.90384 2.18805 9.93646 2.16368 9.96286 2.13328C10.7963 1.16297 12.2274 0 14.2936 0C17.1352 0 19.471 2.36812 19.5005 5.28C19.5258 7.82109 18.6272 10.1672 16.7532 12.4519C15.8733 13.5239 14.2782 15.2386 10.5943 17.7394C10.3455 17.9089 10.0516 17.9998 9.75052 18Z" fill="#112211"/>
                     </svg>
-                    <a href="" class="font-semibold text-[#112211] ms-3">Favourites</a>
+                    <a href="../account-flow/favourites.html" class="font-semibold text-[#112211] ms-3">Favourites</a>
                 </div>
 
             <!-- Divider Line -->
@@ -115,7 +115,7 @@
             <div id="account-menu" class="hidden md:fixed top-20 mt-3 w-full md:w-72 bg-white rounded-2xl shadow-lg p-5">
 
                 <!-- Profile -->
-                <button class="flex items-center gap-4 hover:scale-95 hover:bg-[#8DD3BB] transition ease-in-out duration-150 cursor-pointer w-full rounded-lg p-4">
+                <button class="flex items-center gap-4 p-4">
                     <div class="img">
                         <img src="../assets/images/account-flow/favourites/accmenu.png" class="object-cover aspect-square">
                     </div>
@@ -133,7 +133,7 @@
                 <div class="flex flex-col gap-5">
 
                     <!-- My Acc -->
-                    <div class="flex items-center justify-between">
+                    <a href="../account-flow/acchistory.html" class="flex items-center justify-between hover:scale-95 transition duration-200 cursor-pointer">
                         <div class="flex items-center gap-2">
                             <span>
                                 <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,10 +148,10 @@
                                 <path d="M0.75 0.75L5.25 5.25L0.75 9.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- My Payments -->
-                    <div class="flex items-center justify-between">
+                    <a href="../account-flow/accpayment.html" class="flex items-center justify-between hover:scale-95 transition duration-200 cursor-pointer">
                         <div class="flex items-center gap-2">
                             <span>
                                 <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,10 +166,10 @@
                                 <path d="M0.75 0.75L5.25 5.25L0.75 9.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- My Settings -->
-                    <div class="flex items-center justify-between">
+                    <a href="../account-flow/account.html" class="flex items-center justify-between hover:scale-95 transition duration-200 cursor-pointer">
                         <div class="flex items-center gap-2">
                             <span>
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@
                                 <path d="M0.75 0.75L5.25 5.25L0.75 9.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
 
@@ -195,14 +195,14 @@
                 <div class="flex flex-col gap-5">
 
                     <!-- Support -->
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-between hover:scale-95 cursor-pointer transition ease-in-out duration-150">
                         <div class="flex items-center gap-2">
                             <span>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.4708 2.33401C12.7409 1.59684 11.8725 1.01116 10.9155 0.610624C9.95849 0.210084 8.9318 0.0025772 7.89438 2.38544e-05C6.85696 -0.00252949 5.82926 0.199921 4.87032 0.595746C3.91138 0.99157 3.0401 1.57297 2.30653 2.30653C1.57297 3.0401 0.99157 3.91138 0.595746 4.87032C0.199921 5.82926 -0.00252949 6.85696 2.38544e-05 7.89438C0.0025772 8.9318 0.210084 9.95849 0.610624 10.9155C1.01116 11.8725 1.59684 12.7409 2.33401 13.4708C3.06396 14.208 3.93237 14.7937 4.88935 15.1942C5.84633 15.5947 6.87302 15.8022 7.91044 15.8048C8.94786 15.8074 9.97556 15.6049 10.9345 15.2091C11.8934 14.8133 12.7647 14.2319 13.4983 13.4983C14.2319 12.7647 14.8133 11.8934 15.2091 10.9345C15.6049 9.97556 15.8074 8.94786 15.8048 7.91044C15.8022 6.87302 15.5947 5.84633 15.1942 4.88935C14.7937 3.93237 14.208 3.06396 13.4708 2.33401V2.33401ZM5.65698 8.04936C5.62714 7.59282 5.7372 7.13802 5.97247 6.74563C6.20773 6.35323 6.55704 6.04188 6.97379 5.8531C7.39055 5.66432 7.85496 5.60707 8.30508 5.689C8.75521 5.77092 9.16967 5.98812 9.49318 6.31164C9.8167 6.63516 10.0339 7.04961 10.1158 7.49974C10.1978 7.94986 10.1405 8.41427 9.95172 8.83103C9.76294 9.24779 9.45159 9.59709 9.0592 9.83236C8.6668 10.0676 8.21201 10.1777 7.75546 10.1478C7.21079 10.1117 6.69776 9.87903 6.31177 9.49305C5.92579 9.10706 5.6931 8.59404 5.65698 8.04936V8.04936ZM14.0945 5.70655L10.7065 5.91186C10.6833 5.91308 10.6602 5.90863 10.6391 5.89889C10.618 5.88915 10.5996 5.87442 10.5855 5.85597C10.403 5.61684 10.1894 5.40319 9.95026 5.22069C9.93181 5.2066 9.91708 5.18822 9.90734 5.16715C9.8976 5.14607 9.89314 5.12294 9.89436 5.09975L10.0997 1.71175C10.1009 1.68967 10.1074 1.66819 10.1185 1.64907C10.1296 1.62995 10.1451 1.61371 10.1636 1.60169C10.1822 1.58967 10.2033 1.5822 10.2253 1.57988C10.2473 1.57756 10.2696 1.58046 10.2902 1.58835C11.1847 1.92906 11.9969 2.45516 12.6736 3.13208C13.3503 3.80901 13.8761 4.62144 14.2165 5.516C14.2244 5.53667 14.2273 5.5589 14.2249 5.58089C14.2226 5.60289 14.2152 5.62403 14.2031 5.64259C14.1911 5.66116 14.1749 5.67662 14.1558 5.68774C14.1366 5.69885 14.1152 5.7053 14.0931 5.70655H14.0945ZM5.70655 1.71175L5.91186 5.09975C5.91308 5.12294 5.90863 5.14607 5.89889 5.16715C5.88915 5.18822 5.87442 5.2066 5.85597 5.22069C5.61684 5.40319 5.40319 5.61684 5.22069 5.85597C5.2066 5.87442 5.18822 5.88915 5.16715 5.89889C5.14607 5.90863 5.12294 5.91308 5.09975 5.91186L1.71175 5.70655C1.68967 5.7053 1.66819 5.69885 1.64907 5.68774C1.62995 5.67662 1.61371 5.66116 1.60169 5.64259C1.58967 5.62403 1.5822 5.60289 1.57988 5.58089C1.57756 5.5589 1.58046 5.53667 1.58835 5.516C1.9289 4.6213 2.45492 3.80878 3.13185 3.13185C3.80878 2.45492 4.6213 1.9289 5.516 1.58835C5.53667 1.58046 5.5589 1.57756 5.58089 1.57988C5.60289 1.5822 5.62403 1.58967 5.64259 1.60169C5.66116 1.61371 5.67662 1.62995 5.68774 1.64907C5.69885 1.66819 5.7053 1.68967 5.70655 1.71175V1.71175ZM1.71175 10.0983L5.09975 9.89296C5.12294 9.89174 5.14607 9.89619 5.16715 9.90593C5.18822 9.91567 5.2066 9.93041 5.22069 9.94886C5.40319 10.188 5.61684 10.4016 5.85597 10.5841C5.87442 10.5982 5.88915 10.6166 5.89889 10.6377C5.90863 10.6588 5.91308 10.6819 5.91186 10.7051L5.70655 14.0931C5.7053 14.1152 5.69885 14.1366 5.68774 14.1558C5.67662 14.1749 5.66116 14.1911 5.64259 14.2031C5.62403 14.2152 5.60289 14.2226 5.58089 14.2249C5.5589 14.2273 5.53667 14.2244 5.516 14.2165C4.6213 13.8759 3.80878 13.3499 3.13185 12.673C2.45492 11.996 1.9289 11.1835 1.58835 10.2888C1.58046 10.2682 1.57756 10.2459 1.57988 10.2239C1.5822 10.2019 1.58967 10.1808 1.60169 10.1622C1.61371 10.1437 1.62995 10.1282 1.64907 10.1171C1.66819 10.106 1.68967 10.0995 1.71175 10.0983V10.0983ZM10.0983 14.0931L9.89296 10.7051C9.89174 10.6819 9.89619 10.6588 9.90593 10.6377C9.91567 10.6166 9.93041 10.5982 9.94886 10.5841C10.188 10.4016 10.4016 10.188 10.5841 9.94886C10.5982 9.93041 10.6166 9.91567 10.6377 9.90593C10.6588 9.89619 10.6819 9.89174 10.7051 9.89296L14.0931 10.0983C14.1152 10.0995 14.1366 10.106 14.1558 10.1171C14.1749 10.1282 14.1911 10.1437 14.2031 10.1622C14.2152 10.1808 14.2226 10.2019 14.2249 10.2239C14.2273 10.2459 14.2244 10.2682 14.2165 10.2888C13.8759 11.1835 13.3499 11.996 12.673 12.673C11.996 13.3499 11.1835 13.8759 10.2888 14.2165C10.2682 14.2244 10.2459 14.2273 10.2239 14.2249C10.2019 14.2226 10.1808 14.2152 10.1622 14.2031C10.1437 14.1911 10.1282 14.1749 10.1171 14.1558C10.106 14.1366 10.0995 14.1152 10.0983 14.0931V14.0931Z" fill="black"/>
                                 </svg>
                             </span>
-                            <p class="text-[#112211] text-sm font-medium">Settings</p>
+                            <p class="text-[#112211] text-sm font-medium">Support</p>
                         </div>
 
                         <div class="flex">
@@ -242,56 +242,61 @@
         <!-- Filter Choice Boxes -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_1fr_80px] gap-y-6 gap-x-4">
       
-            <!-- Destination -->
-            <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+          <!-- Destination -->
+          <div class="relative flex border border-[#79747E]/30 rounded-lg">
             <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Enter Destination</label>
-            <select class="w-full text-[#112211]/60 font-medium ms-6 p-2 bg-transparent appearance-none">
-                <option>Lahore - Karachi</option>
-                <option>Karachi - Lahore</option>
-                <option>Lahore - Islamabad</option>
-                <option>Islamabad - Karachi</option>
+            <select class="w-full text-[#112211]/60 font-medium bg-transparent appearance-none p-4 text-center">
+              <option>Istanbul, Turkey</option>
+              <option>Karachi - Lahore</option>
+              <option>Islamabad - Karachi</option>
             </select>
-            <div class="absolute left-4 top-6.5 pointer-events-none">
-                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 7.06406C18.2772 6.85651 17.7664 6.74955 17.25 6.75H3.75C3.23368 6.7495 2.72288 6.85629 2.25 7.06359C1.58166 7.35587 1.01294 7.83652 0.613357 8.4468C0.213775 9.05708 0.000638647 9.77055 0 10.5V15.75C0 15.9489 0.0790176 16.1397 0.21967 16.2803C0.360322 16.421 0.551088 16.5 0.75 16.5C0.948912 16.5 1.13968 16.421 1.28033 16.2803C1.42098 16.1397 1.5 15.9489 1.5 15.75V15.375C1.50122 15.2759 1.54112 15.1812 1.61118 15.1112C1.68124 15.0411 1.77592 15.0012 1.875 15H19.125C19.2241 15.0012 19.3188 15.0411 19.3888 15.1112C19.4589 15.1812 19.4988 15.2759 19.5 15.375V15.75C19.5 15.9489 19.579 16.1397 19.7197 16.2803C19.8603 16.421 20.0511 16.5 20.25 16.5C20.4489 16.5 20.6397 16.421 20.7803 16.2803C20.921 16.1397 21 15.9489 21 15.75V10.5C20.9993 9.77062 20.7861 9.05726 20.3865 8.44707C19.9869 7.83688 19.4183 7.3563 18.75 7.06406ZM16.125 0H4.875C4.17881 0 3.51113 0.276562 3.01884 0.768845C2.52656 1.26113 2.25 1.92881 2.25 2.625V6C2.25002 6.02906 2.25679 6.05771 2.26979 6.0837C2.28278 6.10969 2.30163 6.1323 2.32486 6.14976C2.34809 6.16721 2.37505 6.17903 2.40363 6.18428C2.43221 6.18953 2.46162 6.18806 2.48953 6.18C2.89896 6.06025 3.32341 5.99964 3.75 6H3.94828C3.99456 6.00029 4.03932 5.98346 4.07393 5.95274C4.10855 5.92202 4.13058 5.87958 4.13578 5.83359C4.17669 5.46712 4.35115 5.12856 4.62586 4.88256C4.90056 4.63656 5.25625 4.50037 5.625 4.5H8.25C8.61899 4.50003 8.97503 4.63606 9.25002 4.88209C9.52502 5.12812 9.69969 5.46688 9.74063 5.83359C9.74583 5.87958 9.76786 5.92202 9.80247 5.95274C9.83709 5.98346 9.88184 6.00029 9.92813 6H11.0747C11.121 6.00029 11.1657 5.98346 11.2003 5.95274C11.235 5.92202 11.257 5.87958 11.2622 5.83359C11.3031 5.46736 11.4773 5.12899 11.7517 4.88303C12.0261 4.63706 12.3815 4.50072 12.75 4.5H15.375C15.744 4.50003 16.1 4.63606 16.375 4.88209C16.65 5.12812 16.8247 5.46688 16.8656 5.83359C16.8708 5.87958 16.8929 5.92202 16.9275 5.95274C16.9621 5.98346 17.0068 6.00029 17.0531 6H17.25C17.6766 5.99979 18.1011 6.06057 18.5105 6.18047C18.5384 6.18854 18.5679 6.19 18.5965 6.18473C18.6251 6.17945 18.6521 6.16759 18.6753 6.15009C18.6986 6.13258 18.7174 6.1099 18.7304 6.08385C18.7433 6.0578 18.7501 6.0291 18.75 6V2.625C18.75 1.92881 18.4734 1.26113 17.9812 0.768845C17.4889 0.276562 16.8212 0 16.125 0Z" fill="#112211"/>
-                </svg>
+            <div class="absolute left-4 top-5 pointer-events-none">
+              <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.75 7.06406C18.2772 6.85651 17.7664 6.74955 17.25 6.75H3.75C3.23368 6.7495 2.72288 6.85629 2.25 7.06359C1.58166 7.35587 1.01294 7.83652 0.613357 8.4468C0.213775 9.05708 0.000638647 9.77055 0 10.5V15.75C0 15.9489 0.0790176 16.1397 0.21967 16.2803C0.360322 16.421 0.551088 16.5 0.75 16.5C0.948912 16.5 1.13968 16.421 1.28033 16.2803C1.42098 16.1397 1.5 15.9489 1.5 15.75V15.375C1.50122 15.2759 1.54112 15.1812 1.61118 15.1112C1.68124 15.0411 1.77592 15.0012 1.875 15H19.125C19.2241 15.0012 19.3188 15.0411 19.3888 15.1112C19.4589 15.1812 19.4988 15.2759 19.5 15.375V15.75C19.5 15.9489 19.579 16.1397 19.7197 16.2803C19.8603 16.421 20.0511 16.5 20.25 16.5C20.4489 16.5 20.6397 16.421 20.7803 16.2803C20.921 16.1397 21 15.9489 21 15.75V10.5C20.9993 9.77062 20.7861 9.05726 20.3865 8.44707C19.9869 7.83688 19.4183 7.3563 18.75 7.06406ZM16.125 0H4.875C4.17881 0 3.51113 0.276562 3.01884 0.768845C2.52656 1.26113 2.25 1.92881 2.25 2.625V6C2.25002 6.02906 2.25679 6.05771 2.26979 6.0837C2.28278 6.10969 2.30163 6.1323 2.32486 6.14976C2.34809 6.16721 2.37505 6.17903 2.40363 6.18428C2.43221 6.18953 2.46162 6.18806 2.48953 6.18C2.89896 6.06025 3.32341 5.99964 3.75 6H3.94828C3.99456 6.00029 4.03932 5.98346 4.07393 5.95274C4.10855 5.92202 4.13058 5.87958 4.13578 5.83359C4.17669 5.46712 4.35115 5.12856 4.62586 4.88256C4.90056 4.63656 5.25625 4.50037 5.625 4.5H8.25C8.61899 4.50003 8.97503 4.63606 9.25002 4.88209C9.52502 5.12812 9.69969 5.46688 9.74063 5.83359C9.74583 5.87958 9.76786 5.92202 9.80247 5.95274C9.83709 5.98346 9.88184 6.00029 9.92813 6H11.0747C11.121 6.00029 11.1657 5.98346 11.2003 5.95274C11.235 5.92202 11.257 5.87958 11.2622 5.83359C11.3031 5.46736 11.4773 5.12899 11.7517 4.88303C12.0261 4.63706 12.3815 4.50072 12.75 4.5H15.375C15.744 4.50003 16.1 4.63606 16.375 4.88209C16.65 5.12812 16.8247 5.46688 16.8656 5.83359C16.8708 5.87958 16.8929 5.92202 16.9275 5.95274C16.9621 5.98346 17.0068 6.00029 17.0531 6H17.25C17.6766 5.99979 18.1011 6.06057 18.5105 6.18047C18.5384 6.18854 18.5679 6.19 18.5965 6.18473C18.6251 6.17945 18.6521 6.16759 18.6753 6.15009C18.6986 6.13258 18.7174 6.1099 18.7304 6.08385C18.7433 6.0578 18.7501 6.0291 18.75 6V2.625C18.75 1.92881 18.4734 1.26113 17.9812 0.768845C17.4889 0.276562 16.8212 0 16.125 0Z" fill="#112211"/>
+              </svg>
             </div>
-            </div>
+          </div>
 
-            <!-- Check in -->
-            <div class="relative border border-[#79747E]/30 rounded-lg p-4">
-                <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Check in</label>
-                <input type="date" name="" class="w-full text-[#112211]/60 font-medium p-2 bg-transparent">
-            </div>
+          <!-- Check in -->
+          <div class="relative border border-[#79747E]/30 rounded-lg flex">
+              <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Check in</label>
+              <input type="date" name="" class="w-full text-[#112211]/60 font-medium p-4 bg-transparent appearance-none">
+          </div>
 
-            <!-- Check Out -->
-            <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+          <!-- Check Out -->
+          <div class="relative border border-[#79747E]/30 rounded-lg flex">
             <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-sm text-[#112211]/50 font-semibold">Check Out</label>
-            <input type="date" class="w-full text-[#112211]/80 font-medium p-2 bg-transparent" />
-            </div>
+            <input type="date" class="w-full text-[#112211]/80 font-medium p-4 bg-transparent" />
+          </div>
 
-            <!-- Rooms & Guests -->
-            <div class="relative border border-[#79747E]/30 rounded-lg p-4">
-            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Rooms & Guests</label>
-            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
-                <option>1 Room, 2 Guests</option>
-                <option>2 Rooms, 1 guest</option>
-                <option>1 Room, 2 Guests</option>
-                <option>2 Rooms, 1 guest</option>
-            </select>
-            <div class="absolute right-4 top-8 pointer-events-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" fill="none">
-                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75.75 7.5 7.5 14.25.75"/>
-                </svg>
-            </div>
-            </div>
+          <!-- Rooms & Guests -->
+          <div class="relative border border-[#79747E]/30 rounded-lg flex">
+          <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Rooms & Guests</label>
+          <select class="w-full text-[#112211]/60 font-medium bg-transparent appearance-none p-4 text-center">
+              <option>1 Room, 2 Guests</option>
+              <option>2 Rooms, 1 guest</option>
+              <option>1 Room, 2 Guests</option>
+              <option>2 Rooms, 1 guest</option>
+          </select>
+          <div class="absolute right-4 top-6 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" fill="none">
+              <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75.75 7.5 7.5 14.25.75"/>
+              </svg>
+          </div>
 
-            <!-- Search Button -->
-            <button class="bg-[#8DD3BB] rounded-xl flex items-center justify-center p-5 md:col-span-2 lg:col-span-1 hover:scale-105 transition ease-in-out">
-                <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.19043 0.0234375C12.6932 0.0236703 16.3564 3.68758 16.3564 8.19043C16.3583 9.9531 15.7871 11.6687 14.7285 13.0781L14.7158 13.0947L14.7305 13.1084L19.1396 17.5176V17.5186C19.3351 17.7373 19.4398 18.0222 19.4316 18.3154C19.4234 18.6088 19.3032 18.8882 19.0957 19.0957C18.8882 19.3032 18.6088 19.4234 18.3154 19.4316C18.0589 19.4387 17.8086 19.3597 17.6035 19.209L17.5186 19.1396L13.1084 14.7305L13.0947 14.7158L13.0781 14.7285C11.6687 15.7871 9.9531 16.3583 8.19043 16.3564C3.68758 16.3564 0.0236703 12.6932 0.0234375 8.19043C0.0234375 3.68744 3.68744 0.0234375 8.19043 0.0234375ZM9.33594 2.42969C8.19661 2.20306 7.0156 2.31914 5.94238 2.76367C4.86923 3.20819 3.95202 3.96097 3.30664 4.92676C2.66126 5.89264 2.31641 7.02877 2.31641 8.19043C2.31838 9.74741 2.93812 11.2398 4.03906 12.3408C5.14014 13.4419 6.63328 14.0616 8.19043 14.0635C9.35194 14.0634 10.4874 13.7185 11.4531 13.0732C12.4189 12.4279 13.1717 11.5107 13.6162 10.4375C14.0607 9.36429 14.1768 8.18325 13.9502 7.04395C13.7235 5.90471 13.1641 4.85846 12.3428 4.03711C11.5214 3.21576 10.4752 2.65633 9.33594 2.42969Z" fill="#112211" stroke="#112211" stroke-width="0.046875"/>
-                </svg>
-            </button>
+          <div class="absolute left-4 top-5 pointer-events-none">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3428 1.52719C12.4306 0.542344 11.1565 0 9.75027 0C8.33652 0 7.05824 0.539062 6.15027 1.51781C5.23246 2.50734 4.78527 3.85219 4.89027 5.30437C5.09839 8.16937 7.27855 10.5 9.75027 10.5C12.222 10.5 14.3984 8.16984 14.6098 5.30531C14.7162 3.86625 14.2662 2.52422 13.3428 1.52719ZM18.0003 21H1.50027C1.2843 21.0028 1.07042 20.9574 0.874189 20.8672C0.677959 20.7769 0.504316 20.6441 0.365893 20.4783C0.0612056 20.1141 -0.0616069 19.6167 0.0293306 19.1137C0.424956 16.9191 1.65964 15.0755 3.60027 13.7812C5.32433 12.6323 7.50824 12 9.75027 12C11.9923 12 14.1762 12.6328 15.9003 13.7812C17.8409 15.075 19.0756 16.9186 19.4712 19.1133C19.5621 19.6162 19.4393 20.1136 19.1346 20.4778C18.9963 20.6437 18.8226 20.7766 18.6264 20.867C18.4302 20.9573 18.2163 21.0028 18.0003 21Z" fill="#112211"/>
+              </svg>
+          </div>
+          </div>
+
+          <!-- Search Button -->
+          <button class="bg-[#8DD3BB] rounded-xl flex items-center justify-center p-5 md:col-span-2 lg:col-span-1 hover:scale-105 transition ease-in-out">
+            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.19043 0.0234375C12.6932 0.0236703 16.3564 3.68758 16.3564 8.19043C16.3583 9.9531 15.7871 11.6687 14.7285 13.0781L14.7158 13.0947L14.7305 13.1084L19.1396 17.5176V17.5186C19.3351 17.7373 19.4398 18.0222 19.4316 18.3154C19.4234 18.6088 19.3032 18.8882 19.0957 19.0957C18.8882 19.3032 18.6088 19.4234 18.3154 19.4316C18.0589 19.4387 17.8086 19.3597 17.6035 19.209L17.5186 19.1396L13.1084 14.7305L13.0947 14.7158L13.0781 14.7285C11.6687 15.7871 9.9531 16.3583 8.19043 16.3564C3.68758 16.3564 0.0236703 12.6932 0.0234375 8.19043C0.0234375 3.68744 3.68744 0.0234375 8.19043 0.0234375ZM9.33594 2.42969C8.19661 2.20306 7.0156 2.31914 5.94238 2.76367C4.86923 3.20819 3.95202 3.96097 3.30664 4.92676C2.66126 5.89264 2.31641 7.02877 2.31641 8.19043C2.31838 9.74741 2.93812 11.2398 4.03906 12.3408C5.14014 13.4419 6.63328 14.0616 8.19043 14.0635C9.35194 14.0634 10.4874 13.7185 11.4531 13.0732C12.4189 12.4279 13.1717 11.5107 13.6162 10.4375C14.0607 9.36429 14.1768 8.18325 13.9502 7.04395C13.7235 5.90471 13.1641 4.85846 12.3428 4.03711C11.5214 3.21576 10.4752 2.65633 9.33594 2.42969Z" fill="#112211" stroke="#112211" stroke-width="0.046875"/>
+            </svg>
+          </button>
 
         </div>
       </div>
@@ -617,7 +622,7 @@
                                 </button>
                                 </div>
 
-                                <a href="../flights-flow/flights-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
+                                <a href="../hotel-flow/hotel-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
                             </div>
                             
                         </div>
@@ -728,7 +733,7 @@
                                 </button>
                                 </div>
 
-                                <a href="../flights-flow/flights-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
+                                <a href="../hotel-flow/hotel-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
                             </div>
                             
                         </div>
@@ -839,7 +844,7 @@
                                 </button>
                                 </div>
 
-                                <a href="../flights-flow/flights-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
+                                <a href="../hotel-flow/hotel-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
                             </div>
                             
                         </div>
@@ -950,7 +955,7 @@
                                 </button>
                                 </div>
 
-                                <a href="../flights-flow/flights-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
+                                <a href="../hotel-flow/hotel-details.html" class="rounded-lg bg-[#8DD3BB] p-4 w-full text-[#112211] font-semibold hover:scale-95 transition ease-in-out text-center">View Deals</a>
                             </div>
                             
                         </div>

@@ -1,79 +1,880 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
-<link href="./assets/css/output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+
+  <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body class="font-montserrat bg-gray-100 box-border m-0 p-0">
-    
-    <!-- Here you Can Nav Throw all the Website Pages -->
-    <section class="container mx-auto py-12">
-        
-        <div class="grid grid-cols-3">
 
-            <!-- Landing Page -->
-            <div class="flex">
-                <div><a href="landing-page.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Landing Page</a></div>
-            </div>
+<header>
+  <!-- Hero Section + Header-->
+  <section class="bg-hero rounded-3xl mx-4 mt-4 shadow-xl min-h-[500px] bg-cover bg-center bg-no-repeat md:min-h-[700px]">
+    <!-- Navbar -->
+    <nav class="grid grid-cols-2 items-center px-4 py-6 md:grid-cols-3 md:px-8 md:py-7">
+      
+      <!-- Logo -->
+      <div class="justify-self-start md:justify-self-center md:col-start-2">
+        <a href="./index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="111" height="36" fill="none">
+            <g clip-path="url(#a)">
+                <path fill="#fff" d="m14.728 5.577 3.219 2.431-1.966 2.502c1.357 1.536 1.857 3.288 1.857 5.22 0 2.18-.822 5.254-3.719 6.577 2.932 1.466 3.646 3.575 3.646 5.828 0 4.863-3.719 7.865-8.83 7.865C3.824 36 0 32.89 0 28.135h4.324c0 2.288 2.11 3.79 4.611 3.79 2.502 0 4.468-1.358 4.468-3.79 0-2.431-2.288-3.54-4.468-3.54C3.432 24.595 0 21.236 0 15.73c0-5.507 4.002-8.94 8.938-8.94 1.396 0 2.823.18 4.04 1.001l1.75-2.214ZM4.324 15.729c0 3.076 2.075 4.898 4.611 4.898 2.502 0 4.576-1.857 4.576-4.897S11.44 10.76 8.938 10.76c-2.54 0-4.614 1.893-4.614 4.969ZM50.567 0v24.99h-4.324V0h4.324ZM69.999 16.195c0 5.076-3.467 9.187-9.187 9.187-5.72 0-9.152-4.11-9.152-9.187 0-5.042 3.502-9.187 9.117-9.187 5.614 0 9.222 4.145 9.222 9.187Zm-13.98 0c0 2.68 1.61 5.184 4.79 5.184 3.18 0 4.79-2.501 4.79-5.184 0-2.645-1.859-5.22-4.79-5.22-3.145 0-4.79 2.575-4.79 5.22ZM75.45 0v9.76c1.036-1.822 3.933-2.823 5.79-2.823 5.147 0 8.974 3.146 8.974 9.223 0 5.79-3.897 9.222-9.079 9.222-2.144 0-4.324-.714-5.684-2.823l-.287 2.431h-4.076V0h4.363Zm.284 16.16c0 3.18 2.358 5.184 5.112 5.184 2.788 0 5.006-2.11 5.006-5.184 0-3.18-2.218-5.147-5.006-5.147-2.75-.003-5.112 2.072-5.112 5.147ZM96.699 19.232c1.013 1.95 3.333 2.782 6.223 1.73 1.51-.551 3.285-1.842 3.872-3.158l3.562 1.632c-1.086 2.45-3.623 4.362-6.143 5.28-5.71 2.078-10.389-.214-12.32-5.523-1.835-5.038.271-9.913 5.647-11.87 5.541-2.017 10.251.15 12.093 7.202l-12.934 4.707Zm7.768-6.67c-1.051-2.052-3.122-2.514-5.474-1.66-2.218.806-3.639 2.543-3.46 4.91l8.934-3.25Z"/>
+                <path fill="#8DD3BB" fill-rule="evenodd" d="M39.763 11.99c-1.414-2.95-4.361-4.982-8.293-4.982-5.614 0-9.116 4.145-9.116 9.187 0 3.218 1.379 6.049 3.847 7.69.14-.106.225-.174.225-.174a62.402 62.402 0 0 0 3.6-2.534c-2.202-.648-3.313-2.755-3.313-4.982 0-2.645 1.647-5.22 4.79-5.22 2.766 0 4.576 2.294 4.771 4.775a62.21 62.21 0 0 0 3.489-3.76ZM31.06 25.374a62.346 62.346 0 0 0 9.605-8.41c-.332 4.716-3.731 8.418-9.16 8.418-.15 0-.298-.003-.445-.008Z" clip-rule="evenodd"/>
+                <path fill="#8DD3BB" d="M43.318 4.538C38.863 2.9 35.66 6.424 35.66 6.424l3.036 1.766c1.138-.653 1.645-.02 1.775.328.093.245-.032.513-.13.66l-.74.933a62.282 62.282 0 0 1-13.915 12.41s-1.58 1.274-2.422 1.293c-.707.016-1.023-.58-.427-1.434l-1.466-3.308s-3.814 2.499-3.075 6.89c.313 1.855 2.055 3.174 3.907 2.84.946-.17 2.116-.632 3.546-1.578l2.633-1.72a62.325 62.325 0 0 0 13.915-12.435l.905-1.093c1.364-1.552 1.976-2.83 2.183-3.84.319-1.546-.596-3.056-2.068-3.598Z"/>
+            </g>
+            <defs>
+                <clipPath id="a">
+                    <path fill="#fff" d="M0 0h110.353v36H0z"/>
+                </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
 
-            <!-- Flights Flow Page -->
-            <div class="flex flex-col gap-10">
-                <div><a href="flights-flow/flights-search.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Flights Search</a></div>
-                <div><a href="flights-flow/flights-listing.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Flights Listing</a></div>
-                <div><a href="flights-flow/flights-details.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Flights Details</a></div>
-                <div><a href="flights-flow/booking-detail.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Booking Detail</a></div>
-                <div><a href="flights-flow/boooing-detail2.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Booking Detail 2</a></div>
-                <div><a href="flights-flow/booking-detail3.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Booking Detail 3</a></div>
-            </div>
+      <!-- Mobile Menu Button -->
+      <button class="justify-self-end text-white block md:hidden" id="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" fill="none" stroke="#fff" viewBox="-0.5 0 25 25">
+          <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M2 12.32h20M2 18.32h20M2 6.32h20"/></g>
+          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M2 12.32h20M2 18.32h20M2 6.32h20"/></g>
+        </svg>
+      </button>
 
-            <!-- Hotel Flow Page -->
-            <div class="flex flex-col gap-10">
-                <div><a href="hotel-flow/hotel-search.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Hotel Search</a></div>
-                <div><a href="hotel-flow/hotel-listing.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Hotel Listing</a></div>
-                <div><a href="hotel-flow/hotel-details.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Hotel Details</a></div>
-                <div><a href="hotel-flow/booking-detail.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Booking Detail</a></div>
-                <div><a href="hotel-flow/booking-detail2.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Booking Detail 2</a></div>
-                <div><a href="hotel-flow/booking-detail3.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Booking Detail 3</a></div>
-            </div>
-            
+      <!-- Mobile Menu -->
+      <div class="hidden col-span-2 w-full mt-6 bg-white/10 rounded-2xl p-6 md:contents md:p-0 md:bg-transparent md:mt-0" id="mobile-menu">
+
+        <!--Nav Buttons -->
+        <div class="grid grid-cols-1 auto-cols-max gap-6 text-[14px] items-center mb-6 md:justify-self-start md:grid-flow-col md:col-start-1 md:row-start-1 md:mb-0">
+          <!-- Flights -->
+          <div class="grid grid-flow-col auto-cols-max gap-2 items-center justify-center md:justify-start">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none">
+                <path fill="#fff" d="M7.997 19.5H6.75a.75.75 0 0 1-.683-1.06l3.021-6.667-4.537-.101-1.655 2.005c-.315.396-.567.573-1.209.573h-.84a.828.828 0 0 1-.689-.33c-.112-.151-.221-.406-.114-.77l.929-3.328a.858.858 0 0 1 .024-.074V9.74a.695.695 0 0 1-.024-.075l-.93-3.35c-.101-.356.009-.605.12-.752A.789.789 0 0 1 .8 5.25h.887c.48 0 .945.215 1.219.563l1.62 1.97 4.562-.067-3.02-6.656A.75.75 0 0 1 6.75 0h1.26a1.172 1.172 0 0 1 .908.46l5.862 7.124 2.708-.07c.198-.012.747-.015.874-.015 2.59.001 4.138.842 4.138 2.251 0 .443-.178 1.266-1.363 1.789-.7.31-1.634.466-2.776.466-.125 0-.673-.004-.874-.015l-2.708-.072-5.876 7.125a1.174 1.174 0 0 1-.906.457Z"/>
+              </svg>
+            </span>
+            <a href="./flights-flow/flights-search.html" class="text-white font-semibold hover:text-gray-200">Find Flights</a>
+          </div>
+
+          <!-- Hotels -->
+          <div class="grid grid-flow-col auto-cols-max gap-2 items-center justify-center md:justify-start">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none">
+                <g filter="url(#a)">
+                    <path fill="#fff" d="M20.25 7.064a3.724 3.724 0 0 0-1.5-.314H5.25A3.754 3.754 0 0 0 1.5 10.5v5.25a.75.75 0 1 0 1.5 0v-.375A.38.38 0 0 1 3.375 15h17.25a.38.38 0 0 1 .375.375v.375a.75.75 0 1 0 1.5 0V10.5a3.754 3.754 0 0 0-2.25-3.436ZM17.625 0H6.375A2.625 2.625 0 0 0 3.75 2.625V6a.187.187 0 0 0 .24.18c.409-.12.833-.18 1.26-.18h.198a.188.188 0 0 0 .188-.166A1.5 1.5 0 0 1 7.125 4.5H9.75a1.5 1.5 0 0 1 1.49 1.334.188.188 0 0 0 .188.166h1.147a.187.187 0 0 0 .187-.166A1.5 1.5 0 0 1 14.25 4.5h2.625a1.5 1.5 0 0 1 1.49 1.334.188.188 0 0 0 .188.166h.197c.427 0 .851.06 1.26.18a.188.188 0 0 0 .24-.18V2.625A2.625 2.625 0 0 0 17.625 0Z"/>
+                    <path stroke="#000" d="M6.375.5h11.25a2.125 2.125 0 0 1 2.125 2.125v2.978a4.973 4.973 0 0 0-.94-.101A1.998 1.998 0 0 0 16.875 4h-2.626a2 2 0 0 0-1.93 1.5h-.634A1.999 1.999 0 0 0 9.75 4H7.124a1.999 1.999 0 0 0-1.933 1.502 4.975 4.975 0 0 0-.941.1V2.625A2.125 2.125 0 0 1 6.375.5ZM21.5 15.37a.88.88 0 0 0-.2-.549l-.058-.063-.063-.058a.88.88 0 0 0-.548-.2H3.369a.88.88 0 0 0-.548.2l-.063.058a.88.88 0 0 0-.258.611v.381l-.005.049A.25.25 0 0 1 2 15.75V10.5l.009-.236A3.255 3.255 0 0 1 3.95 7.52h.001a3.227 3.227 0 0 1 1.131-.267l.168-.004h13.5c.447 0 .89.092 1.299.271l.201-.457-.2.458a3.254 3.254 0 0 1 1.941 2.743L22 10.5v5.249a.25.25 0 0 1-.5 0v-.38Z"/>
+                </g>
+                <defs>
+                    <filter id="a" width="29" height="24.5" x="-2.5" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="4"/><feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_108_21051"/>
+                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_108_21051" result="shape"/>
+                    </filter>
+                </defs>
+              </svg>
+            </span>
+            <a href="./hotel-flow/hotel-search.html" class="text-white font-semibold hover:text-gray-200">Find Stays</a>
+          </div>
         </div>
 
-    </section>
 
-
-    <section class="container mx-auto py-12">
+        <!-- Login & Sign Up -->
+        <div class="grid grid-cols-1 md:grid-flow-col auto-cols-max gap-4 md:gap-6 justify-center md:justify-self-end md:col-start-3 md:row-start-1 items-center border-t border-white/20 md:border-none pt-6 md:pt-0 text-center">
+          <a href="./login-sign-up/login.html" class="font-semibold text-white hover:text-gray-200">Login</a>
+          <a href="./login-sign-up/sign-up.html" class="font-semibold text-gray-900 px-5 py-2.5 rounded-lg bg-white hover:bg-gray-100 transition">Sign Up</a>
+        </div>
         
-        <div class="grid grid-cols-3">
+      </div>
+    </nav>
 
-            <!-- Favourites Page -->
-            <div class="flex">
-                <div><a href="./account-flow/favourites.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Favourites Page</a></div>
-            </div>
+    <!-- Hero Content -->
+    <div class="font-librefranklin grid place-content-center gap-4 h-[350px] text-white text-center px-4 md:h-[500px]">
+      <p class="font-bold text-2xl md:text-[40px]">Helping Others</p>
+      <h1 class="font-bold text-5xl md:text-[80px] leading-tight">LIVE & TRAVEL</h1>
+      <p class="text-lg md:text-[20px]">Special Offers To Suit Your Plan</p>
+    </div>
+  </section>
+</header>
 
-            <!-- Login/Sign Up Flow Pages -->
-            <div class="flex flex-col gap-10">
-                <div><a href="./login-sign-up/login.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Login Page</a></div>
-                <div><a href="./login-sign-up/sign-up.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Sign Up Page</a></div>
-                <div><a href="./login-sign-up/add-payment.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Add Payment Page</a></div>
-                <div><a href="./login-sign-up/forget-password.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Forget Password Page</a></div>
-                <div><a href="./login-sign-up/forget-passowrd-verify-code.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Verify Code Page</a></div>
-                <div><a href="./login-sign-up/new-password.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">New Passowrd Page</a></div>
-            </div>
+<main>
+  <!-- Filter (Search Card) -->
+  <section class="search-card">
+    <div class="container mx-auto px-4 -mt-24 md:-mt-28 mb-20">
+      <div class="bg-white rounded-3xl shadow-lg p-5 md:p-8">
 
-            <!-- Account Flow Pages -->
-            <div class="flex flex-col gap-10">
-                <div><a href="./account-flow/account.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Account Page</a></div>
-                <div><a href="./account-flow/acchistory.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">History Page</a></div>
-                <div><a href="./account-flow/acchistory2.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">History 2 Page</a></div>
-                <div><a href="./account-flow/accpayment.html" class=" rounded-lg shadow-lg border border-[#8DD3BB] p-4 hover:bg-[#8DD3BB]">Payment Page</a></div>
+        <!-- Filter Nav Buttons -->
+        <div class="flex items-center gap-6 mb-6 md:gap-8 md:mb-8">
 
-            </div>
-            
+          <!-- Flights -->
+          <button class="flex items-center gap-2 font-semibold text-gray-900 border-b-4 border-b-transparent hover:border-b-4 hover:border-[#8DD3BB] transition delay-150 duration-500 ease-in-out py-4 px-1">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none">
+                <path fill="#121" d="M7.997 19.5H6.75a.75.75 0 0 1-.683-1.06l3.021-6.667-4.537-.101-1.655 2.005c-.315.396-.567.573-1.209.573h-.84a.83.83 0 0 1-.689-.33c-.112-.151-.221-.406-.114-.77l.929-3.328.024-.074V9.74a1 1 0 0 1-.024-.075l-.93-3.35c-.101-.356.009-.605.12-.752A.79.79 0 0 1 .8 5.25h.887c.48 0 .945.215 1.219.563l1.62 1.97 4.562-.067-3.02-6.656A.75.75 0 0 1 6.75 0h1.26a1.17 1.17 0 0 1 .908.46l5.862 7.124 2.708-.07c.198-.012.747-.015.874-.015 2.59.001 4.138.842 4.138 2.251 0 .443-.178 1.266-1.363 1.789-.7.31-1.634.466-2.776.466-.125 0-.673-.004-.874-.015l-2.708-.072-5.876 7.125a1.17 1.17 0 0 1-.906.457"/>
+              </svg>
+            </span>
+
+            Flights
+          </button>
+
+          <!-- Divider Line -->
+          <div class="w-px h-8 bg-gray-300"></div>
+
+          <!-- Hotels -->
+          <button class="flex items-center gap-2 font-semibold text-gray-900 py-4 px-1 border-b-4 border-b-transparent hover:border-b-4 hover:border-[#8DD3BB] transition delay-150 duration-500 ease-in-out">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
+                <path fill="#121" d="M18.75 7.064a3.7 3.7 0 0 0-1.5-.314H3.75A3.754 3.754 0 0 0 0 10.5v5.25a.75.75 0 1 0 1.5 0v-.375A.38.38 0 0 1 1.875 15h17.25a.38.38 0 0 1 .375.375v.375a.75.75 0 1 0 1.5 0V10.5a3.75 3.75 0 0 0-2.25-3.436M16.125 0H4.875A2.625 2.625 0 0 0 2.25 2.625V6a.187.187 0 0 0 .24.18c.409-.12.833-.18 1.26-.18h.198a.19.19 0 0 0 .188-.166A1.5 1.5 0 0 1 5.625 4.5H8.25a1.5 1.5 0 0 1 1.49 1.334.187.187 0 0 0 .188.166h1.147a.187.187 0 0 0 .187-.166A1.5 1.5 0 0 1 12.75 4.5h2.625a1.5 1.5 0 0 1 1.49 1.334.19.19 0 0 0 .188.166h.197c.427 0 .851.06 1.26.18a.188.188 0 0 0 .24-.18V2.625A2.625 2.625 0 0 0 16.125 0"/>
+              </svg>
+            </span>
+
+            Stays
+          </button>
+
         </div>
 
-    </section>
+        <!-- Filter Choice Boxes -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 mb-8">
+      
+          <!-- Destination -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">From - To</label>
+            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
+              <option>Lahore - Karachi</option>
+              <option>Karachi - Lahore</option>
+              <option>Lahore - Islamabad</option>
+              <option>Islamabad - Karachi</option>
+            </select>
+            <div class="absolute right-4 top-6.5 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" fill="none">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5.75 15.75 6l-5.25 5.25M14.947 6H.75M6 20.25.75 15 6 9.75M1.594 15H15.75"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Trip -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Trip</label>
+            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
+              <option>Return</option>
+              <option>One Way</option>
+              <option>Multi-City</option>
+            </select>
+            <div class="absolute right-4 top-8 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" fill="none">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75.75 7.5 7.5 14.25.75"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Depart - Return -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-sm text-[#112211]/50 font-semibold">Depart - Return</label>
+            <input type="text" class="w-full text-[#112211]/80 font-medium p-2 bg-transparent" placeholder="07 Nov 22 - 13 Nov 22" onfocus="(this.type='date')" />
+          </div>
+
+          <!-- Passenger - Class -->
+          <div class="relative border border-[#79747E]/30 rounded-lg p-4">
+            <label class="absolute -top-2.5 left-3 bg-white px-1.5 text-xs text-[#112211]/50 font-semibold">Passenger - Class</label>
+            <select class="w-full text-[#112211]/60 font-medium p-2 bg-transparent appearance-none">
+              <option>1 Passenger, Economy</option>
+              <option>2 Passengers, Economy</option>
+              <option>1 Passenger, Business</option>
+              <option>2 Passengers, Business</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-col justify-end items-center gap-6 md:flex-row">
+
+          <!-- Promo Code -->
+          <button class="w-full font-bold text-[#112211] hover:text-[#112211]/50 transition py-2 md:w-auto">
+            <span class="text-lg">+</span>
+            Add Promo Code
+          </button>
+
+          <!-- Show Flights BTN -->
+          <a href="./flights-flow/flights-listing.html" class="w-full bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 md:w-auto hover:scale-105 transition duration-300">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
+              </svg>
+            </span>
+            Show Flights
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Places Section -->
+  <section class="Places p-12.5">
+    <div class="container mx-auto ">
+
+      <!-- Places Header -->
+      <div class="flex flex-col md:flex-row md:justify-between">
+        
+        <div class="text-center md:text-start">
+          <h2 class="text-[32px] font-semibold mb-[16px]">Plan Your Perfect Trip</h2>
+          <p class="text-[#112211]/50 text-[16px]">Search Flights & Places Hire to our most popular destinations</p>
+        </div>
+
+        <div class="text-[#112211] mt-10 text-center">
+          <a href="./flights-flow/flights-listing.html" class="border border-[#8DD3BB] rounded-lg py-[11px] px-[16px] hover:bg-[#8DD3BB] transition delay-100 duration-150 ease-in-out">See More Places</a>
+        </div>
+      </div>
+
+      <!-- Places Content(Cards) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px]">
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="pt-8 w-full">
+          <a href="./flights-flow/flights-details.html" class="grid grid-cols-[auto,1fr] gap-3 items-center grid-flow-col p-4 rounded-3xl shadow-lg border border-gray-100 bg-white hover:scale-95 transition duration-200 ease-in-out cursor-pointer">
+          
+            <img src="./assets/images/places/istanbul.png" class="w-[90px] h-[90px] sm:w-24 sm:h-24 object-cover rounded-2xl"/>
+
+            <div class="flex flex-col justify-center">
+              <h2 class="text-base sm:text-lg md:text-xl font-bold text-[#112211]/60">Istanbul, Turkey</h2>
+              
+              <div class="flex flex-wrap gap-2 mt-1 text-xs sm:text-sm font-medium text-[#112211]/60">
+                <span>Flights</span>
+                <span>•</span>
+                <span>Hotels</span>
+                <span>•</span>
+                <span>Resorts</span>
+              </div>
+            </div>
+
+          </a>
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Flights & Hetels Section -->
+  <section class="flights-hotels p-12.5">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Flights -->
+      <div class="flights-bg rounded-3xl bg-cover bg-center bg-no-repeat h-[420px] text-white flex flex-col justify-end items-center text-center p-6 md:p-10">
+
+        <h2 class="text-3xl md:text-4xl font-semibold mb-3">Flights</h2>
+
+        <p class="text-sm md:text-base text-gray-200 mb-6 max-w-md">
+          Search Flights & Places Hire to our most popular destinations
+        </p>
+
+        <a href="./flights-flow/flights-listing.html" class="bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 hover:scale-105 transition duration-300">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
+            </svg>
+          </span>
+          Show Flights
+        </a>
+      </div>
+
+      <!--Hotels-->
+      <div class="hotels-bg rounded-3xl bg-cover bg-center bg-no-repeat h-[420px] text-white flex flex-col justify-end items-center text-center p-6 md:p-10">
+
+        <h2 class="text-3xl md:text-4xl font-semibold mb-3">Hotels</h2>
+
+        <p class="text-sm md:text-base text-gray-200 mb-6 max-w-md">
+          Search hotels & Places Hire to our most popular destinations
+        </p>
+
+        <a href="./hotel-flow/hotel-listing.html" class="bg-[#8DD3BB] text-[#112211] px-10 py-4 rounded-lg font-medium flex items-center justify-center gap-2 hover:scale-105 transition duration-300">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" stroke="#121" stroke-width=".047" d="M13.403.04a.727.727 0 0 1 .525.97L9.196 13.509a.75.75 0 0 1-.696.468h-.03a.71.71 0 0 1-.638-.493q-.004-.007-.006-.016v-.002L5.991 9.17a.48.48 0 0 1 .109-.46L6.1 8.71l6.417-6.882a.24.24 0 0 0 .052-.266.25.25 0 0 0-.132-.132.25.25 0 0 0-.229.022l-.037.03-6.886 6.416a.48.48 0 0 1-.402.122l-.06-.014L.533 6.174H.532L.52 6.17a.728.728 0 0 1-.374-1.094.73.73 0 0 1 .337-.27l.008-.003L12.992.07a.73.73 0 0 1 .411-.032Z"/>
+            </svg>
+          </span>
+          Show Hotels
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews p-12.5">
+    <div class="container mx-auto">
+      <!-- Reviews Header -->
+      <div class="flex flex-col text-center md:text-start">
+        <h1 class="text-[32px] mb-4 font-semibold">Reviews</h1>
+        <p class="text-[#112211]/50 text-[16px]">What people says about Golobe facilities</p>
+      </div>
+
+      <!-- Reviews Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 justify-self-center md:justify-self-stretch gap-10">
+
+        <!-- Card -->
+        <div class="relative max-w-sm md:max-w-md w-full">
+
+          <!-- Background Overlay -->
+          <div class="absolute h-full w-full -right-6.25 -bottom-6.25 bg-[#8DD3BB]/40 rounded-2xl"></div>
+
+          <!-- Card Content -->
+          <div class="relative bg-white rounded-2xl shadow-lg p-6 md:p-8">
+
+            <h2 class="text-[24px] md:text-2xl font-bold text-[#112211] mb-4">
+              "A real sense of community, nurtured"
+            </h2>
+
+            <p class="text-[#112211]/50 text-[16px] mb-4">
+              Really appreciate the help and support from the staff during these tough times. 
+              Shoutout to Katie for...
+            </p>
+
+            <div class="flex justify-end mb-4">
+              <a href="" class="text-sm font-medium text-[#112211] hover:underline"> View More</a>
+            </div>
+
+            <div class="flex items-center gap-3 mb-6 text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+            </div>
+
+            <div class="mb-5">
+              <p class="font-bold text-[#112211] mb-2">Olga</p>
+              <p class="text-sm text-[#112211]/50">Weave Studios - Kai Tak</p>
+            </div>
+
+            <div class="flex items-center gap-2 text-sm text-[#112211]/50 mb-6">
+              <span class="mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path fill="#ffc107" d="M21.806 10.042H21V10h-9v4h5.651A5.998 5.998 0 0 1 6 12a6 6 0 0 1 6-6c1.53 0 2.921.577 3.98 1.52L18.81 4.69A9.95 9.95 0 0 0 12 2C6.478 2 2 6.478 2 12s4.478 10 10 10 10-4.477 10-10c0-.67-.069-1.325-.195-1.959"/>
+                  <path fill="#ff3d00" d="m3.152 7.346 3.286 2.409A6 6 0 0 1 11.999 6c1.53 0 2.921.577 3.98 1.52l2.83-2.829A9.95 9.95 0 0 0 11.998 2a9.99 9.99 0 0 0-8.847 5.346"/>
+                  <path fill="#4caf50" d="M12 22c2.583 0 4.93-.988 6.705-2.596l-3.095-2.619A5.96 5.96 0 0 1 12 18a6 6 0 0 1-5.641-3.973L3.098 16.54C4.753 19.778 8.114 22 12 22"/>
+                  <path fill="#1976d2" d="M21.806 10.042H21V10h-9v4h5.651a6 6 0 0 1-2.043 2.785h.002l3.095 2.619C18.485 19.602 22 17 22 12c0-.67-.069-1.325-.195-1.959"/>
+                </svg>
+              </span>
+              <span>Google</span>
+            </div>
+
+            <div class="rounded-2xl overflow-hidden">
+              <img src="./assets/images/reviews/reviews.jpg" alt="Scenery" class="w-full h-40 md:h-48 object-cover"/>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="relative max-w-sm md:max-w-md w-full">
+
+          <!-- Background Overlay -->
+          <div class="absolute h-full w-full -right-6.25 -bottom-6.25 bg-[#8DD3BB]/40 rounded-2xl"></div>
+
+          <!-- Card Content -->
+          <div class="relative bg-white rounded-2xl shadow-lg p-6 md:p-8">
+
+            <h2 class="text-[24px] md:text-2xl font-bold text-[#112211] mb-4">
+              "A real sense of community, nurtured"
+            </h2>
+
+            <p class="text-[#112211]/50 text-[16px] mb-4">
+              Really appreciate the help and support from the staff during these tough times. 
+              Shoutout to Katie for...
+            </p>
+
+            <div class="flex justify-end mb-4">
+              <a href="" class="text-sm font-medium text-[#112211] hover:underline"> View More</a>
+            </div>
+
+            <div class="flex items-center gap-3 mb-6 text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+            </div>
+
+            <div class="mb-5">
+              <p class="font-bold text-[#112211] mb-2">Olga</p>
+              <p class="text-sm text-[#112211]/50">Weave Studios - Kai Tak</p>
+            </div>
+
+            <div class="flex items-center gap-2 text-sm text-[#112211]/50 mb-6">
+              <span class="mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path fill="#ffc107" d="M21.806 10.042H21V10h-9v4h5.651A5.998 5.998 0 0 1 6 12a6 6 0 0 1 6-6c1.53 0 2.921.577 3.98 1.52L18.81 4.69A9.95 9.95 0 0 0 12 2C6.478 2 2 6.478 2 12s4.478 10 10 10 10-4.477 10-10c0-.67-.069-1.325-.195-1.959"/>
+                  <path fill="#ff3d00" d="m3.152 7.346 3.286 2.409A6 6 0 0 1 11.999 6c1.53 0 2.921.577 3.98 1.52l2.83-2.829A9.95 9.95 0 0 0 11.998 2a9.99 9.99 0 0 0-8.847 5.346"/>
+                  <path fill="#4caf50" d="M12 22c2.583 0 4.93-.988 6.705-2.596l-3.095-2.619A5.96 5.96 0 0 1 12 18a6 6 0 0 1-5.641-3.973L3.098 16.54C4.753 19.778 8.114 22 12 22"/>
+                  <path fill="#1976d2" d="M21.806 10.042H21V10h-9v4h5.651a6 6 0 0 1-2.043 2.785h.002l3.095 2.619C18.485 19.602 22 17 22 12c0-.67-.069-1.325-.195-1.959"/>
+                </svg>
+              </span>
+              <span>Google</span>
+            </div>
+
+            <div class="rounded-2xl overflow-hidden">
+              <img src="./assets/images/reviews/reviews.jpg" alt="Scenery" class="w-full h-40 md:h-48 object-cover"/>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="relative max-w-sm md:max-w-md w-full">
+
+          <!-- Background Overlay -->
+          <div class="absolute h-full w-full -right-6.25 -bottom-6.25 bg-[#8DD3BB]/40 rounded-2xl"></div>
+
+          <!-- Card Content -->
+          <div class="relative bg-white rounded-2xl shadow-lg p-6 md:p-8">
+
+            <h2 class="text-[24px] md:text-2xl font-bold text-[#112211] mb-4">
+              "A real sense of community, nurtured"
+            </h2>
+
+            <p class="text-[#112211]/50 text-[16px] mb-4">
+              Really appreciate the help and support from the staff during these tough times. 
+              Shoutout to Katie for...
+            </p>
+
+            <div class="flex justify-end mb-4">
+              <a href="" class="text-sm font-medium text-[#112211] hover:underline"> View More</a>
+            </div>
+
+            <div class="flex items-center gap-3 mb-6 text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                <path fill="#ffc107" d="M17.717 21a.75.75 0 0 1-.44-.14l-6.029-4.37-6.029 4.37a.75.75 0 0 1-1.15-.847l2.35-6.965L.327 8.87a.75.75 0 0 1 .422-1.368h7.518L10.535.519a.75.75 0 0 1 1.426 0l2.27 6.984h7.517a.75.75 0 0 1 .424 1.369l-6.096 4.176 2.35 6.963a.75.75 0 0 1-.71.99"/>
+              </svg>
+            </div>
+
+            <div class="mb-5">
+              <p class="font-bold text-[#112211] mb-2">Olga</p>
+              <p class="text-sm text-[#112211]/50">Weave Studios - Kai Tak</p>
+            </div>
+
+            <div class="flex items-center gap-2 text-sm text-[#112211]/50 mb-6">
+              <span class="mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path fill="#ffc107" d="M21.806 10.042H21V10h-9v4h5.651A5.998 5.998 0 0 1 6 12a6 6 0 0 1 6-6c1.53 0 2.921.577 3.98 1.52L18.81 4.69A9.95 9.95 0 0 0 12 2C6.478 2 2 6.478 2 12s4.478 10 10 10 10-4.477 10-10c0-.67-.069-1.325-.195-1.959"/>
+                  <path fill="#ff3d00" d="m3.152 7.346 3.286 2.409A6 6 0 0 1 11.999 6c1.53 0 2.921.577 3.98 1.52l2.83-2.829A9.95 9.95 0 0 0 11.998 2a9.99 9.99 0 0 0-8.847 5.346"/>
+                  <path fill="#4caf50" d="M12 22c2.583 0 4.93-.988 6.705-2.596l-3.095-2.619A5.96 5.96 0 0 1 12 18a6 6 0 0 1-5.641-3.973L3.098 16.54C4.753 19.778 8.114 22 12 22"/>
+                  <path fill="#1976d2" d="M21.806 10.042H21V10h-9v4h5.651a6 6 0 0 1-2.043 2.785h.002l3.095 2.619C18.485 19.602 22 17 22 12c0-.67-.069-1.325-.195-1.959"/>
+                </svg>
+              </span>
+              <span>Google</span>
+            </div>
+
+            <div class="rounded-2xl overflow-hidden">
+              <img src="./assets/images/reviews/reviews.jpg" alt="Scenery" class="w-full h-40 md:h-48 object-cover"/>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Card -->
+  <section class="py-5">
+      <div class="container mx-auto">
+          <div class="bg-[#CDEAE1] rounded-2xl mx-4 grid grid-cols-1 lg:grid-cols-2 justify-self-stretch translate-y-24 -mb-24 md:-mb-25">
+
+              <div class="flex flex-col gap-4 p-6">
+
+                  <div class="flex flex-col gap-8">
+                      <h1 class="text-[#112211] text-4xl md:text-5xl lg:text-6xl font-extrabold font-librefranklin ">
+                          Subscribe <br> Newsletter
+                      </h1>
+
+                      <div class="flex flex-col gap-2">
+                          <h3 class="text-xl font-bold text-[#112211]/80 mb-2">The Travel</h3>
+                          <p class="text-[#112211]/70">Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+                      </div>
+                  </div>
+
+                  <!-- Card Form -->
+                  <form action="" class="flex flex-col sm:flex-row gap-4">
+
+                      <input class="flex-1 rounded-lg px-5 py-4 focus:outline-none text-gray-800 bg-white placeholder-gray-400" type="email" name="" id="" placeholder="Your Email Address" required>
+                      <button type="submit" class="bg-[#112211] text-white px-8 py-4 rounded-lg font-semibold hover:scale-105 transition duration-300">Subscribe</button>
+
+                  </form>
+              </div>
+
+              <div class="flex flex-col lg:flex-row items-center lg:items-end md:justify-end px-6">
+                  <img src="./assets/images/footer/footer.png" class="object-cover">
+              </div>
+          </div>
+      </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="pt-70 pb-16 bg-[#7DB8A6] w-full">
+
+      <div class="container mx-auto">
+
+          <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-self-center xl:justify-self-stretch">
+              
+            <!-- Logo And Social Media -->
+            <div class="flex flex-col">
+              <div class="logo">
+                <span>
+                  <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_532_3184)">
+                        <path d="M16.0157 6.06421L19.5155 8.70821L17.3775 11.4284C18.8536 13.0987 19.3976 15.0046 19.3976 17.1046C19.3976 19.4748 18.5037 22.8188 15.3539 24.2569C18.5418 25.8509 19.318 28.1449 19.318 30.5948C19.318 35.8828 15.2742 39.1471 9.71615 39.1471C4.15812 39.1471 0 35.765 0 30.5948H4.70215C4.70215 33.0829 6.99604 34.715 9.71615 34.715C12.4363 34.715 14.5742 33.2388 14.5742 30.5948C14.5742 27.9508 12.0863 26.7449 9.71615 26.7449C3.73192 26.7449 0 23.0925 0 17.1046C0 11.1166 4.35217 7.38448 9.71961 7.38448C11.2373 7.38448 12.7897 7.57853 14.1134 8.47257L16.0157 6.06421ZM4.70215 17.1046C4.70215 20.4485 6.95793 22.4307 9.71615 22.4307C12.4363 22.4307 14.692 20.4104 14.692 17.1046C14.692 13.7987 12.4397 11.7022 9.71961 11.7022C6.95793 11.7022 4.70215 13.7606 4.70215 17.1046Z" fill="#112211"/>
+                        <path d="M54.9878 0V27.1746H50.2856V0H54.9878Z" fill="#112211"/>
+                        <path d="M76.1179 17.6105C76.1179 23.1307 72.3479 27.6008 66.128 27.6008C59.9082 27.6008 56.1763 23.1307 56.1763 17.6105C56.1763 12.1284 59.9844 7.62012 66.0899 7.62012C72.1954 7.62012 76.1179 12.1284 76.1179 17.6105ZM60.9165 17.6105C60.9165 20.5248 62.6664 23.2485 66.1246 23.2485C69.5828 23.2485 71.3326 20.5282 71.3326 17.6105C71.3326 14.7343 69.3125 11.9344 66.1246 11.9344C62.7045 11.9344 60.9165 14.7343 60.9165 17.6105Z" fill="#112211"/>
+                        <path d="M82.047 0V10.6141C83.1731 8.63198 86.3229 7.54389 88.343 7.54389C93.9392 7.54389 98.1008 10.9641 98.1008 17.5724C98.1008 23.8688 93.863 27.6009 88.2287 27.6009C85.8967 27.6009 83.5265 26.8246 82.047 24.5306L81.7351 27.1746H77.3032V0H82.047ZM82.3553 17.5724C82.3553 21.0307 84.9195 23.2104 87.9134 23.2104C90.9453 23.2104 93.3571 20.9163 93.3571 17.5724C93.3571 14.114 90.9453 11.976 87.9134 11.976C84.923 11.9725 82.3553 14.2284 82.3553 17.5724Z" fill="#112211"/>
+                        <path d="M105.152 20.9129C106.254 23.0336 108.777 23.9381 111.919 22.7945C113.562 22.195 115.492 20.7916 116.13 19.3604L120.004 21.1347C118.822 23.7994 116.064 25.8786 113.323 26.8766C107.113 29.136 102.027 26.6444 99.9268 20.8713C97.9309 15.3927 100.221 10.0908 106.067 7.96318C112.093 5.76966 117.214 8.12604 119.217 15.7947L105.152 20.9129ZM113.6 13.6601C112.457 11.4284 110.204 10.926 107.647 11.8547C105.235 12.7314 103.69 14.62 103.884 17.1946L113.6 13.6601Z" fill="#112211"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.2386 13.0379C41.7013 9.83054 38.4964 7.62012 34.2213 7.62012C28.1158 7.62012 24.3076 12.1284 24.3076 17.6105C24.3076 21.1103 25.8077 24.1881 28.491 25.9722C28.6439 25.8578 28.7359 25.7835 28.7359 25.7835C30.0743 24.9103 31.3799 23.991 32.6506 23.0277C30.2567 22.3233 29.0479 20.0327 29.0479 17.6105C29.0479 14.7343 30.8393 11.9344 34.2559 11.9344C37.2647 11.9344 39.2333 14.4285 39.445 17.1269C40.7639 15.818 42.0295 14.454 43.2386 13.0379ZM33.7754 27.5917C37.5614 24.9081 41.0621 21.8426 44.2201 18.4459C43.8586 23.5747 40.1622 27.6008 34.2594 27.6008C34.0963 27.6008 33.935 27.5978 33.7754 27.5917Z" fill="white"/>
+                        <path d="M47.1044 4.93451C42.2601 3.15336 38.7777 6.98594 38.7777 6.98594L42.08 8.9057C43.317 8.19532 43.868 8.88491 44.01 9.26262C44.1105 9.52945 43.9754 9.82053 43.868 9.97993L43.064 10.9953C38.7257 16.2278 33.6251 20.7742 27.9319 24.489C27.9319 24.489 26.2133 25.8751 25.2985 25.8959C24.5292 25.9132 24.1862 25.2652 24.8341 24.3365L23.2402 20.7396C23.2402 20.7396 19.0925 23.4564 19.8964 28.2315C20.2359 30.2483 22.1314 31.6829 24.1446 31.319C25.1737 31.1354 26.4454 30.6329 28.0012 29.6037L30.8634 27.7325C36.5566 24.0108 41.6607 19.4505 45.9955 14.211L46.9796 13.0224C48.4627 11.3349 49.128 9.94528 49.3532 8.84679C49.6997 7.16614 48.7052 5.5236 47.1044 4.93451Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_532_3184">
+                            <rect width="120" height="39.1471" fill="white"/>
+                        </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </div>
+
+              <div class="social flex gap-3 mt-6.25">
+
+                <!-- Facebook -->
+                <span>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.05025C0 13.5248 3.24975 17.2455 7.5 18V11.4998H5.25V9H7.5V6.99975C7.5 4.74975 8.94975 3.50025 11.0002 3.50025C11.6497 3.50025 12.3503 3.6 12.9998 3.69975V6H11.85C10.7498 6 10.5 6.54975 10.5 7.25025V9H12.9L12.5002 11.4998H10.5V18C14.7502 17.2455 18 13.5255 18 9.05025C18 4.0725 13.95 0 9 0C4.05 0 0 4.0725 0 9.05025Z" fill="#112211"/>
+                  </svg>
+                </span>
+
+                <!-- Twitter (X) -->
+                <span>
+                  <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9217 1.8246C18.2258 2.13293 17.4783 2.34127 16.6925 2.43543C17.5033 1.95026 18.11 1.18665 18.3992 0.287099C17.6374 0.73959 16.8036 1.05809 15.9342 1.22877C15.3495 0.604486 14.5751 0.190704 13.7311 0.0516603C12.8872 -0.0873831 12.0209 0.0560916 11.2669 0.459809C10.5128 0.863527 9.91315 1.5049 9.56096 2.28435C9.20878 3.0638 9.12378 3.93772 9.31917 4.77043C7.77557 4.69293 6.26552 4.29172 4.88702 3.59285C3.50852 2.89398 2.29237 1.91307 1.3175 0.713765C0.984167 1.28877 0.7925 1.95543 0.7925 2.66543C0.792128 3.30459 0.949527 3.93397 1.25073 4.49771C1.55194 5.06145 1.98763 5.54213 2.51917 5.8971C1.90273 5.87748 1.29989 5.71092 0.760833 5.41127V5.46127C0.760771 6.35772 1.07086 7.22658 1.63849 7.92043C2.20611 8.61428 2.99631 9.09037 3.875 9.26793C3.30315 9.4227 2.70361 9.44549 2.12167 9.3346C2.36958 10.1059 2.8525 10.7805 3.50281 11.2637C4.15312 11.747 4.93826 12.0147 5.74833 12.0296C4.37319 13.1091 2.67491 13.6947 0.926667 13.6921C0.616984 13.6922 0.307564 13.6741 0 13.6379C1.77456 14.7789 3.84028 15.3844 5.95 15.3821C13.0917 15.3821 16.9958 9.4671 16.9958 4.3371C16.9958 4.17043 16.9917 4.0021 16.9842 3.83543C17.7436 3.28624 18.3991 2.60618 18.92 1.8271L18.9217 1.8246Z" fill="#112211"/>
+                  </svg>
+                </span>
+
+                <!-- Youtube -->
+                <span>
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5829 2.0933C19.4696 1.68932 19.249 1.32359 18.9445 1.03497C18.6314 0.737469 18.2477 0.524662 17.8295 0.416632C16.2645 0.00413232 9.99454 0.00413241 9.99454 0.00413241C7.38065 -0.0256071 4.7674 0.105194 2.16954 0.395799C1.75136 0.51181 1.36834 0.729371 1.05454 1.02913C0.746204 1.3258 0.522871 1.69163 0.406204 2.09247C0.125949 3.60225 -0.0102189 5.13525 -0.000462243 6.6708C-0.0104622 8.20497 0.125371 9.73746 0.406204 11.2491C0.520371 11.6483 0.742871 12.0125 1.05204 12.3066C1.3612 12.6008 1.7462 12.8133 2.16954 12.9258C3.75537 13.3375 9.99454 13.3375 9.99454 13.3375C12.6118 13.3672 15.2283 13.2364 17.8295 12.9458C18.2477 12.8378 18.6314 12.625 18.9445 12.3275C19.2489 12.0389 19.4693 11.6731 19.582 11.2691C19.8696 9.75993 20.0094 8.22629 19.9995 6.68997C20.0212 5.14714 19.8815 3.60627 19.5829 2.09247V2.0933ZM8.0012 9.52413V3.8183L13.2179 6.67163L8.0012 9.52413Z" fill="#112211"/>
+                  </svg>
+                </span>
+
+                <!-- Instagram -->
+                <span>
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.49787 5.66546C6.93707 5.66546 5.66333 6.9392 5.66333 8.5C5.66333 10.0608 6.93707 11.3345 8.49787 11.3345C10.0587 11.3345 11.3324 10.0608 11.3324 8.5C11.3324 6.9392 10.0587 5.66546 8.49787 5.66546ZM16.9994 8.5C16.9994 7.32621 17.01 6.16305 16.9441 4.99138C16.8782 3.63046 16.5677 2.42264 15.5725 1.42747C14.5752 0.430173 13.3695 0.121839 12.0086 0.0559198C10.8348 -0.00999972 9.67167 0.000632496 8.5 0.000632496C7.32621 0.000632496 6.16305 -0.00999972 4.99138 0.0559198C3.63046 0.121839 2.42264 0.432299 1.42747 1.42747C0.430173 2.42477 0.121839 3.63046 0.0559198 4.99138C-0.00999972 6.16517 0.000632496 7.32833 0.000632496 8.5C0.000632496 9.67167 -0.00999972 10.837 0.0559198 12.0086C0.121839 13.3695 0.432299 14.5774 1.42747 15.5725C2.42477 16.5698 3.63046 16.8782 4.99138 16.9441C6.16517 17.01 7.32833 16.9994 8.5 16.9994C9.67379 16.9994 10.837 17.01 12.0086 16.9441C13.3695 16.8782 14.5774 16.5677 15.5725 15.5725C16.5698 14.5752 16.8782 13.3695 16.9441 12.0086C17.0121 10.837 16.9994 9.67379 16.9994 8.5ZM8.49787 12.8613C6.08437 12.8613 4.13655 10.9135 4.13655 8.5C4.13655 6.08649 6.08437 4.13868 8.49787 4.13868C10.9114 4.13868 12.8592 6.08649 12.8592 8.5C12.8592 10.9135 10.9114 12.8613 8.49787 12.8613ZM13.0378 4.97862C12.4743 4.97862 12.0193 4.52356 12.0193 3.96006C12.0193 3.39655 12.4743 2.94149 13.0378 2.94149C13.6013 2.94149 14.0564 3.39655 14.0564 3.96006C14.0565 4.09386 14.0303 4.22639 13.9792 4.35004C13.9281 4.4737 13.853 4.58605 13.7584 4.68067C13.6638 4.77528 13.5515 4.8503 13.4278 4.90143C13.3041 4.95256 13.1716 4.97879 13.0378 4.97862Z" fill="#112211"/>
+                  </svg>
+                </span>
+
+              </div>
+            </div>
+
+            <!-- Destinations -->
+            <div>
+              <div class="mb-4">
+                <h1 class="text-[#112211] font-bold text-[16px] font-librefranklin">Our Destination</h1>
+              </div>
+
+              <ul class="flex flex-col gap-3">
+
+                  <a href="#" class="text-[#112211]/60 text-[14px]">Canada</a>
+
+                  <a href="#" class="text-[#112211]/60 text-[14px]">Alaska</a>
+
+                  <a href="#" class="text-[#112211]/60 text-[14px]">France</a>
+
+                  <a href="#" class="text-[#112211]/60 text-[14px]">Iceland</a>
+
+              </ul>
+            </div>
+
+            <!-- Our Activities -->
+            <div>
+                <div class="mb-4">
+                  <h1 class="text-[#112211] font-bold text-[16px] font-librefranklin">Our Activities</h1>
+                </div>
+
+                <ul class="flex flex-col gap-3">
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Our Activities</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Cruising & sailing</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Multi-activities</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Kayaing</a>
+
+                </ul>
+            </div>
+
+            <!-- Travel Blogs -->
+            <div>
+                <div class="mb-4">
+                  <h1 class="text-[#112211] font-bold text-[16px] font-librefranklin">Travel Blogs</h1>
+                </div>
+
+                <ul class="flex flex-col gap-3">
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Bali Travel Guide</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Sri Lanks Travel Guide</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Peru Travel Guide</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Bali Travel Guide</a>
+
+                </ul>
+            </div>
+            
+            <!-- About Us -->
+            <div>
+                <div class="mb-4">
+                  <h1 class="text-[#112211] font-bold text-[16px] font-librefranklin">About Us</h1>
+                </div>
+
+                <ul class="flex flex-col gap-3">
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Our Story</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Work with us</a>
+
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                <div class="mb-4">
+                  <h1 class="text-[#112211] font-bold text-[16px] font-librefranklin">Contact Us</h1>
+                </div>
+
+                <ul class="flex flex-col gap-3">
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Our Story</a>
+
+                    <a href="#" class="text-[#112211]/60 text-[14px]">Work with us</a>
+
+                </ul>
+            </div>
+
+          </div>
+          
+      </div>
+</footer>
+
+  
+  <script>
+    /* Navbar Menu Hamburger */
+    const menuBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click',() => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('grid');
+    });
+  </script>
+
 
 </body>
 </html>
